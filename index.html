@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Funnel Display', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Funnel Display', sans-serif;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="fixed inset-0 bg-gray-100 backdrop-blur-sm -z-10"></div>
+    <nav class="relative px-4 py-4 flex justify-center items-center bg-[#011c23] text-white shadow-sm">
+        <!-- Center Logo on Mobile -->
+        <div class="lg:hidden text-center">
+            <a class="text-xl font-bold" href="#">
+                <span class="text-6xl font-extrabold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">bnb.law</span>
+            </a>
+            <div class="flex items-center justify-center text-xs text-white/80 mt-1">
+                <span class="font-bold">Ime i prezime 1</span>
+                <span class="mx-1">&</span> 
+                <span class="font-bold">Ime i prezime 2</span>
+            </div>
+        </div>
+        
+        <!-- Navigation Items Wrapper -->
+        <div class="hidden lg:flex items-center">
+            <!-- Left Navigation Items -->
+            <div class="flex space-x-8 mr-12">
+                <a href="#" class="nav-link text-white/90 hover:text-white">Home</a>
+                <a href="#" class="nav-link text-white/90 hover:text-white">Services</a>
+                <a href="#" class="nav-link text-white/90 hover:text-white">Our Team</a>
+            </div>
+            
+            <!-- Logo (Centered) -->
+            <div class="mx-12 text-center">
+                <a class="text-xl font-bold" href="#">
+                    <span class="text-6xl font-extrabold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">bnb.law</span>
+                </a>
+                <div class="flex items-center justify-center text-xs text-white/80 mt-1">
+                    <span class="font-bold">Ime i prezime 1</span>
+                    <span class="mx-1">&</span>
+                    <span class="font-bold">Ime i prezime 2</span>
+                </div>
+            </div>
+
+            <!-- Right Navigation Items -->
+            <div class="flex space-x-8 ml-12">
+                <a href="#" class="nav-link text-white/90 hover:text-white">About Firm</a>
+                <a href="#" class="nav-link text-white/90 hover:text-white">Contact Us Today</a>
+            </div>
+        </div>
+        
+        <!-- Mobile menu button (right side) -->
+        <div class="absolute right-4 top-4">
+            <button class="navbar-burger flex items-center text-white p-3 lg:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile menu (right side) -->
+    <div class="navbar-menu mobile-menu fixed top-0 right-0 bottom-0 w-5/6 max-w-sm z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-l overflow-y-auto">
+            <div class="flex flex-col items-center justify-center w-full mb-8 relative pt-12">
+                <button class="navbar-close absolute top-6 right-6">
+                    <i data-feather="x"></i>
+                </button>
+                <a class="text-xl font-bold leading-none" href="#">
+                    <span class="text-6xl font-extrabold bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">bnb.law</span>
+                </a>
+                <div class="flex items-center justify-center text-sm text-black mt-1">
+                    <span class="font-bold">Ime i prezime 1</span>
+                    <span class="mx-1">&</span>
+                    <span class="font-bold">Ime i prezime 2</span>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Our Team</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Firm</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact Us Today</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#011c23] hover:bg-[#011c23]/90 rounded-xl flex items-center justify-center" href="tel:+38111258798">
+                        <i data-feather="phone" class="w-4 h-4 mr-2"></i> +381 11 258 798
+                    </a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Copyright © <script>document.write(new Date().getFullYear())</script></span>
+                </p>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        feather.replace();
+        
+        // Mobile menu toggle
+        const burger = document.querySelector('.navbar-burger');
+        const menu = document.querySelector('.navbar-menu');
+        const close = document.querySelector('.navbar-close');
+        const backdrop = document.querySelector('.navbar-backdrop');
+        
+        burger.addEventListener('click', () => {
+            menu.classList.remove('hidden');
+        });
+        
+        close.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+        
+        backdrop.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="py-32 bg-black">
+        <div class="container mx-auto px-4">
+            <span class="text-sm font-medium text-white/80 tracking-wider">[ LAW STRENGTH ]</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 text-left">
+                We don't just represent - <br>we guide, protect and advocate with purpose
+            </h1>
+            <p class="text-xl text-white/90 mb-8 max-w-3xl text-left">
+                Our law firm specializes in providing comprehensive legal services tailored to your unique needs. With decades of combined experience, we offer strategic counsel across various practice areas including corporate law, litigation, real estate, and intellectual property.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#" class="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-transparent hover:text-white border-2 border-white transition duration-300">
+                    Contact Us Today
+                </a>
+                <a href="#" class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-black transition duration-300">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
