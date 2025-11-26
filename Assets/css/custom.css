@@ -14,6 +14,13 @@
   --brand-light: #abe7e5;
 }
 
+.underline-accent {
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent-dark);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+}
+
 .p-20{
     padding: 20px;
 }
@@ -417,6 +424,13 @@ body {
   border: 2px solid #d2dde5;
 }
 
+.about-logo-img {
+  max-height: 32px;
+  width: auto;
+  filter: grayscale(100%) brightness(60%);
+  opacity: 0.3;
+}
+
 /* ABOUT responsive tweaks */
 @media (max-width: 991.98px) {
   .about-section {
@@ -540,4 +554,174 @@ body {
 /* Hide default Bootstrap icon */
 .navbar-toggler-icon {
   display: none !important;
+}
+/* =============================
+   PARTNERS / TEAM CUBES SECTION
+   ============================= */
+
+.partners-section {
+  background-color: #00151c; /* dark base to blend with hero */
+}
+
+/* Full-width "cubes" */
+.partner-card {
+  position: relative;
+  min-height: 700px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark gradient at the bottom over the image */
+.partner-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.75) 35%,
+    rgba(0, 0, 0, 0.35) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* Text block sitting on top of gradient */
+.partner-card-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 2.2rem 2.4rem 2.3rem;
+  color: #ffffff;
+}
+
+/* Typographic hierarchy */
+.partner-role {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  opacity: 0.85;
+  margin-bottom: 0.6rem;
+}
+
+.partner-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.partner-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 26rem;
+  opacity: 0.93;
+  margin-bottom: 1.4rem;
+}
+
+/* BUTTON — SHARP RECTANGLE, WHITE OUTLINE, NO CUT CORNERS */
+.btn-partner-outline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  padding: 0.55rem 1.35rem;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  /* sharp edges */
+  border-radius: 0;
+
+  /* simple outline */
+  border: 1px solid var(--accent-light);
+
+  backdrop-filter: blur(2px);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-partner-outline:hover {
+  background-color: #ffffff;
+  color: #00151c;
+  transform: translateY(-1px);
+}
+
+/* icon inside button */
+.partner-btn-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .partner-card {
+    min-height: 600px;
+  }
+
+  .partner-card-overlay {
+    padding: 1.9rem 1.8rem 1.9rem;
+  }
+
+  .partner-name {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .partner-card {
+    min-height: 600px;
+  }
+
+  .partner-card-overlay {
+    padding: 1.6rem 1.4rem 1.7rem;
+  }
+
+  .partner-text {
+    font-size: 0.9rem;
+  }
+}
+/* =============================
+   CLIENT LOGOS SECTION
+   ============================= */
+
+.clients-section {
+  background-color: var(--accent-dark);
+  color: #ffffff;
+}
+
+.clients-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* logos row */
+.clients-logos-wrapper {
+  background-color: var(--accent-dark);
+}
+
+/* same shade always, no hover difference */
+.client-logo-img {
+  max-height: 34px;
+  width: auto;
+  filter: grayscale(100%) brightness(55%);
+  opacity: 0.75;
+}
+
+/* responsiveness */
+@media (max-width: 767.98px) {
+  .client-logo-img {
+    max-height: 26px;
+    opacity: 0.7;
+  }
 }
