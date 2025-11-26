@@ -1,0 +1,286 @@
+$brand-color: #0f62fe;
+$bg-color: #0e1c2f;
+$text-light: #e6eefc;
+$card-radius: 20px;
+$shadow-soft: 0 15px 30px rgba(0, 0, 0, 0.25);
+
+:root {
+  --brand-color: #{$brand-color};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rethink Sans', system-ui, sans-serif;
+  background: radial-gradient(circle at 10% 20%, rgba(15, 98, 254, 0.25), transparent 35%),
+    radial-gradient(circle at 90% 0%, rgba(15, 98, 254, 0.2), transparent 30%),
+    linear-gradient(160deg, #0e1c2f 0%, #0c1626 40%, #0d1a30 100%);
+  color: $text-light;
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-xxl {
+  max-width: 1240px;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-brand .brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, lighten($brand-color, 10%), $brand-color);
+  display: inline-block;
+}
+
+.navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  color: $text-light;
+  font-weight: 600;
+  opacity: 0.82;
+  padding-inline: 1rem !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+  opacity: 1;
+}
+
+.hero {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.hero-title {
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.text-brand {
+  color: $brand-color;
+}
+
+.bg-brand-soft {
+  background: rgba(15, 98, 254, 0.14);
+}
+
+.pill-highlight {
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: $text-light;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+}
+
+.hero-visual {
+  position: relative;
+  padding: 1.25rem;
+}
+
+.glass-tile {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.progress-wrap {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.progress-label {
+  color: lighten($text-light, 10%);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.progress-brand {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  .progress-bar {
+    background: linear-gradient(90deg, lighten($brand-color, 8%), $brand-color);
+    border-radius: 999px;
+  }
+}
+
+.floating-badge {
+  position: absolute;
+  right: 12px;
+  bottom: -24px;
+  background: #fff;
+  color: #0d1a30;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  min-width: 240px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+.avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, lighten($brand-color, 12%), $brand-color);
+  border: 3px solid #fff;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: $card-radius;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  min-height: 130px;
+}
+
+.feature-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.feature-text {
+  color: $text-light;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cards-grid {
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: $card-radius;
+  padding: 1.5rem 1.25rem;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.icon-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 98, 254, 0.15);
+  color: $brand-color;
+  font-size: 1.2rem;
+  margin-bottom: 0.9rem;
+}
+
+.person-card {
+  background: #fff;
+  border: none;
+  border-radius: $card-radius;
+  overflow: hidden;
+  box-shadow: $shadow-soft;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.person-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+}
+
+.person-card h3 {
+  color: #0d1a30;
+}
+
+.person-card p {
+  color: #6c7785;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: $card-radius;
+  padding: 1.25rem;
+  height: 100%;
+  box-shadow: $shadow-soft;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 98, 254, 0.12);
+  color: $brand-color;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.lead {
+  color: $text-light;
+}
+
+img.rounded-4 {
+  border-radius: 20px !important;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 992px) {
+  .cards-grid {
+    margin-top: 1.5rem;
+  }
+
+  .hero {
+    padding-top: 0.5rem;
+  }
+
+  .floating-badge {
+    position: static;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .feature-card {
+    min-height: 110px;
+  }
+
+  .glass-tile {
+    padding: 1.25rem;
+  }
+}
