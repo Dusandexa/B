@@ -187,6 +187,7 @@ body {
 /* RIGHT BLOCK – stats panel */
 .hero-stats-panel {
   padding-bottom: 0.8rem;
+  padding-top: 1.5rem;
 }
 
 /* Stats container: one row, equal-width centered columns */
