@@ -1,0 +1,538 @@
+/* Import Rethink Sans from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg-dark: #133034;
+  --card-bg: #0e2933;
+  --text-main: #ffffff;
+  --text-muted: #9cb3c1;
+  --accent: #ffffff;
+  --radius-xl: 24px;
+  --accent-light: #8e99e8;
+  --accent-dark: #6365b8;
+  --brand-dark: #1d484e;
+  --brand-light: #abe7e5;
+}
+
+.p-20{
+    padding: 20px;
+}
+.pr-20{
+    padding-right: 20px !important;
+}
+
+
+body {
+  font-family: "Rethink Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.navbar-brand-subtext {
+  display: block;
+  margin-top: -5px;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.navbar-brand-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, #9ce3ff, #4b6cff 45%, #6ffff1);
+  margin-right: 0.4rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.96rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--text-main);
+}
+
+.btn-cta {
+  border-radius: 999px;
+  padding: 0.55rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #00151c;
+  border: none;
+}
+
+.btn-cta:hover {
+  background-color: #e9f2f7;
+  color: #00151c;
+}
+
+/* ===========================
+   HERO – BB LAW
+   IMAGE + 2 COLUMNS AT BOTTOM
+   =========================== */
+
+.hero.hero-law {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  align-items: stretch;
+  min-height: 80vh; /* hero height: image fills this */
+}
+
+/* Background image (change URL to your own) */
+.hero.hero-law .hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/bb-hero.jpg"); /* path from Assets/css/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Gradient mainly at the BOTTOM of the hero */
+.hero.hero-law .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,   /* darkest at very bottom */
+    rgba(0, 0, 0, 0.7) 30%,   /* still strong near bottom */
+    rgba(0, 0, 0, 0.35) 60%,  /* fading out */
+    rgba(0, 0, 0, 0.0) 100%   /* transparent near top */
+  );
+  z-index: 1;
+}
+
+/* Container & row anchored to bottom, above bg + overlay */
+.hero.hero-law .hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1120px;
+  padding-top: 4.5rem;   /* leaves room for navbar */
+  padding-bottom: 2.8rem;
+  display: flex;
+  align-items: flex-end; /* content sits towards bottom of hero */
+}
+
+.hero-row {
+  width: 100%;
+}
+
+/* LEFT BLOCK */
+.hero-text-block {
+  padding-bottom: 0.5rem;
+}
+
+/* Small label */
+.hero-kicker-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.hero-kicker-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background-color: var(--accent-dark);
+}
+
+/* Main title */
+.hero-title {
+  font-size: clamp(2.1rem, 2.4vw + 1.2rem, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.hero-title-em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  max-width: 460px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* RIGHT BLOCK – stats panel */
+.hero-stats-panel {
+  padding-bottom: 0.8rem;
+}
+
+/* Stats container: one row, equal-width centered columns */
+.hero-stats {
+  display: flex;
+  flex-wrap: nowrap !important;    /* keep in one row on all breakpoints */
+  justify-content: flex-end;       /* align to right within hero column */
+  width: 100%;
+  gap: 0;                          /* spacing handled via padding + dividers */
+}
+
+/* Each stat: equal width & centered content */
+.hero-stat {
+  flex: 1;                         /* equal width for all three */
+  display: flex;
+  flex-direction: column;
+  align-items: center;             /* center horizontally */
+   /*justify-content: center;         center vertically */
+  position: relative;
+  padding: 0 1rem;
+  min-height: 60px;
+  text-align: center;
+}
+
+/* Vertical divider between stats */
+.hero-stat:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero-stat-value {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 0.3rem;
+}
+
+/* HERO RESPONSIVE */
+
+@media (max-width: 991.98px) {
+  .hero.hero-law {
+    min-height: 70vh;
+  }
+
+  .hero.hero-law .hero-container {
+    padding-top: 4.25rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .hero-stats {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero.hero-law {
+    min-height: 65vh;
+  }
+
+  .hero.hero-law .hero-container {
+    padding-top: 4.5rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 1.8rem + 1.2vw, 2.4rem);
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .hero-stat-value {
+    font-size: 1.3rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.75rem;
+  }
+
+  .hero-stat:not(:first-child)::before {
+    height: 1.6rem;
+  }
+}
+
+/* =============================
+   ABOUT SECTION
+   ============================= */
+
+.about-section {
+  background-color: #f7fafb;
+  color: #042533;
+  padding: 5rem 0 4.5rem;
+}
+
+.about-top-row {
+  margin-bottom: 1.5rem;
+}
+
+.about-label-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #475a65;
+}
+
+.about-label-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: var(--accent-dark);
+}
+
+/* Big paragraph on the right */
+.about-intro {
+  margin: 0;
+  max-width: 760px;
+  font-size: 2.1rem;          /* close to screenshot size */
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+/* =====================================
+   STAT GRID — EQUAL WIDTH BOXES
+===================================== */
+
+/* Flex row to control layout */
+.about-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+/* The columns that hold each stat box */
+.about-stats-row > div {
+  display: flex;
+  flex: 0 0 25%;    /* 4 equal columns on desktop */
+  max-width: 25%;
+}
+
+/* The stat box itself: ALWAYS full border */
+.about-stat {
+  flex: 1;
+  padding: 1.9rem 1.8rem 1.7rem;
+  border: 1px solid #e1e7ec !important;  /* force border on ALL sides */
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* Text inside boxes */
+.about-stat-value {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.about-stat-label {
+  font-size: 0.95rem;
+  color: #6a7c87;
+  line-height: 1.45;
+}
+
+/* TABLET & PHONES: 2×2 LAYOUT */
+@media (max-width: 767.98px) {
+  .about-stats-row > div {
+    flex: 0 0 50%;    /* 2 columns */
+    max-width: 50%;
+  }
+}
+
+/* VERY SMALL PHONES: STILL 2×2 */
+@media (max-width: 480px) {
+  .about-stats-row > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .about-stat {
+    padding: 1.5rem 1.4rem 1.4rem;
+    border: 1px solid #e1e7ec !important;  /* double-ensure border */
+  }
+}
+
+/* Logos row */
+.about-logos {
+  opacity: 0.7;
+}
+
+.about-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9aadb9;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.about-logo-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 2px solid #d2dde5;
+  position: relative;
+}
+
+.about-logo-icon::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 999px;
+  border: 2px solid #d2dde5;
+}
+
+/* ABOUT responsive tweaks */
+@media (max-width: 991.98px) {
+  .about-section {
+    padding: 3.5rem 0 3.5rem;
+  }
+
+  .about-intro {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-intro {
+    font-size: 1.4rem;
+  }
+}
+/* === CUSTOM HAMBURGER MENU === */
+
+.navbar-toggler.custom-hamburger {
+  border: none !important;
+  padding: 0.4rem;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;                /* spacing between lines */
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 1px;             /* thickness */
+  background-color: #ffffff;
+  border-radius: 3px;
+    margin-left: auto;     /* shifts all lines to the right */
+}
+
+/* Line lengths */
+.hamburger-lines .l1 { width: 34px; } /* longest */
+.hamburger-lines .l2 { width: 20px; } /* short */
+.hamburger-lines .l3 { width: 26px; } /* medium (between 1 & 2) */
+.hamburger-lines .l4 { width: 16px; } /* shortest */
+
+/* Bigger overall size on mobile */
+.navbar-toggler.custom-hamburger {
+  transform: scale(1.15);
+}
+
+/* Remove the Bootstrap default icon */
+.navbar-toggler-icon {
+  display: none !important;
+}
+/* === CUSTOM 4-LINE HAMBURGER WITH X ANIMATION ==== */
+
+.navbar-toggler.custom-hamburger {
+  border: none !important;
+  padding: 0.45rem;
+  outline: none !important;
+  box-shadow: none !important;
+  transform: scale(1.2);
+}
+
+.hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 1px;
+  background-color: #ffffff;
+  border-radius: 4px;
+    margin-left: auto;     /* shifts all lines to the right */
+  transition:
+    width 0.25s ease,
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+/* CLOSED STATE — your custom lengths */
+.l1 { width: 34px; }  /* longest  */
+.l2 { width: 20px; }  /* short    */
+.l3 { width: 26px; }  /* medium   */
+.l4 { width: 16px; }  /* smallest */
+
+/* ================================
+   OPEN STATE  (Bootstrap applies aria-expanded="true")
+   We animate to a clean symmetrical X
+   ================================ */
+
+.navbar-toggler.custom-hamburger[aria-expanded="true"] .line {
+  width: 34px;                   /* All full width during animation */
+}
+
+/* Top line -> rotate into "\" part of X */
+.navbar-toggler.custom-hamburger[aria-expanded="true"] .l1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+/* Second line -> fade away */
+.navbar-toggler.custom-hamburger[aria-expanded="true"] .l2 {
+  opacity: 0;
+}
+
+/* Third line -> fade away */
+.navbar-toggler.custom-hamburger[aria-expanded="true"] .l3 {
+  opacity: 0;
+}
+
+/* Bottom line -> rotate into "/" part of X */
+.navbar-toggler.custom-hamburger[aria-expanded="true"] .l4 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Hide default Bootstrap icon */
+.navbar-toggler-icon {
+  display: none !important;
+}
