@@ -8,17 +8,24 @@
   --text-muted: #9cb3c1;
   --accent: #ffffff;
   --radius-xl: 24px;
+  --accent-lighter:#9599ff;
   --accent-light: #8e99e8;
   --accent-dark: #6365b8;
   --brand-dark: #1d484e;
   --brand-light: #abe7e5;
+  --back-light:#ebebeb;
+  --back-middle:#f9f9f7;
 }
 
 .underline-accent {
   text-decoration-line: underline;
-  text-decoration-color: var(--accent-dark);
+  text-decoration-color: var(--accent-lighter);
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
+}
+
+.accent-text{
+    color: var(--accent-light);
 }
 
 .p-20{
@@ -37,7 +44,7 @@ body {
   font-family: "Rethink Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   background-color: var(--bg-dark);
-  color: var(--text-main);
+  padding-top: 80px; /* same as your navbar height */
 }
 
 .site-wrapper {
@@ -98,6 +105,67 @@ body {
 .btn-cta:hover {
   background-color: #e9f2f7;
   color: #00151c;
+}
+/* ================
+   WHITE CUT BUTTON
+   ================ */
+.btn-white-cut {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  background: #ffffff;
+  color: #133034;                 /* your dark base text color */
+  padding: 0.65rem 1.4rem;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  border-radius: 0;               /* no round edges */
+
+  /* cut corner top-left */
+clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
+
+  transition: all 0.25s ease;
+}
+
+.btn-white-cut:hover {
+  background: var(--accent-light);  /* your brand accent */
+  color: #ffffff;
+}
+
+
+
+/* ================
+   BLACK CUT BUTTON
+   ================ */
+.btn-black-cut {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  background: #000000;
+  color: #ffffff;
+  padding: 0.65rem 1.4rem;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  border-radius: 0; /* no rounded edges */
+
+  /* same cut corner */
+clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
+
+  transition: all 0.25s ease;
+}
+
+.btn-black-cut:hover {
+  background: var(--accent-light);  /* your brand accent */
+  color: #000000;
 }
 
 /* ===========================
@@ -255,7 +323,8 @@ body {
 
   .hero.hero-law .hero-container {
     padding-top: 4.25rem;
-    padding-bottom: 2.4rem;
+    padding-left: 2rem;
+    padding-bottom: 0.2rem;
   }
 
   .hero-stats {
@@ -270,7 +339,7 @@ body {
 
   .hero.hero-law .hero-container {
     padding-top: 4.5rem;
-    padding-bottom: 2.2rem;
+    padding-bottom: 0.2rem;
   }
 
   .hero-title {
@@ -300,7 +369,7 @@ body {
    ============================= */
 
 .about-section {
-  background-color: #f7fafb;
+  background-color: var(--back-middle);
   color: #042533;
   padding: 5rem 0 4.5rem;
 }
@@ -434,7 +503,7 @@ body {
 /* ABOUT responsive tweaks */
 @media (max-width: 991.98px) {
   .about-section {
-    padding: 3.5rem 0 3.5rem;
+    padding: 3.5rem 1.7rem 3.5rem;
   }
 
   .about-intro {
@@ -693,8 +762,7 @@ body {
    ============================= */
 
 .clients-section {
-  background-color: var(--accent-dark);
-  color: #ffffff;
+  background-color: var(--accent);
 }
 
 .clients-title {
@@ -707,7 +775,7 @@ body {
 
 /* logos row */
 .clients-logos-wrapper {
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
 }
 
 /* same shade always, no hover difference */
@@ -715,13 +783,337 @@ body {
   max-height: 34px;
   width: auto;
   filter: grayscale(100%) brightness(55%);
-  opacity: 0.75;
+  opacity: 0.18;
 }
 
 /* responsiveness */
 @media (max-width: 767.98px) {
   .client-logo-img {
     max-height: 26px;
-    opacity: 0.7;
+    opacity: 0.18;
+  }
+}
+/* MOBILE NAV — bigger links, right aligned, padding on whole mainNavbar */
+@media (max-width: 991.98px) {
+  /* whole collapse div */
+  #mainNavbar {
+    padding: 20px !important;
+  }
+
+  /* align nav list and links to the right */
+  #mainNavbar .navbar-nav {
+    align-items: flex-end !important;
+  }
+
+  #mainNavbar .nav-link {
+    font-size: 2rem !important;
+    text-align: right;
+    width: 100%;
+    padding: 0.35rem 0.25rem; /* light padding on each item */
+  }
+
+  /* dropdown items (optional, to match style) */
+  #mainNavbar .dropdown-menu .dropdown-item {
+    font-size: 1.6rem !important;
+    text-align: right;
+  }
+}
+/* DROPDOWN MENU — new color, transparency, blur */
+.dropdown-menu {
+  background-color: rgba(1, 36, 36, 0.3) !important; /* #012424 with light transparency */
+  backdrop-filter: blur(26px) !important;              /* blur background behind */
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: none !important;                             /* optional: remove bootstrap border */
+}
+
+/* Dropdown items text color (optional) */
+.dropdown-menu .dropdown-item {
+  color: #ffffff !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+/* Make navbar transparent + blurred */
+.navbar-custom {
+  background-color: rgba(19, 48, 52, 0.90) !important;  /* transparency */
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+
+  /* required to let blur show behind BEGIN */
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* required to let blur show behind END */
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* Replace background-image system with a real zoomable image layer */
+.partner-card {
+  position: relative;
+  overflow: hidden; /* keeps zoom inside */
+}
+
+.partner-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  transition: transform 0.6s ease; /* smooth zoom */
+}
+
+/* assign background images from inline styles */
+.partner-card-left::before {
+  background-image: url("../images/bojana-miljanovic.png");
+}
+
+.partner-card-right::before {
+  background-image: url("../images/Bojan_Vuckovic.jpg");
+}
+/* Zoom only the photo, not the whole card */
+.partner-card:hover::before {
+  transform: scale(1.08); /* image zoom only */
+}
+/* Gradient color mapping layer */
+/* Two-tone (duotone) gradient map: #6365b8 → #8e99e8 */
+.partner-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* two-color duotone gradient */
+  background: linear-gradient(135deg, #6365b8 0%, #8e99e8 100%);
+
+  /* this blend mode gives a true duotone look */
+  mix-blend-mode: color;
+
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.partner-card:hover::after {
+  opacity: 1 !important;
+}
+
+/* show gradient on hover */
+.partner-card:hover::after {
+  opacity: 0.75;
+}
+/* Dark bottom gradient for readability */
+.partner-card .partner-gradient-bottom {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.15) 45%,
+    rgba(0, 0, 0, 0.05) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+/* Make sure layering is correct */
+.partner-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* photo layer – already set in your ::before */
+.partner-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  transition: transform 0.6s ease;
+}
+
+/* full duotone overlay (on hover only) */
+.partner-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #6365b8 0%, #8e99e8 100%);
+  mix-blend-mode: color;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* dark bottom gradient behind text (you already have this) */
+.partner-gradient-bottom {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.75) 35%,
+    rgba(0, 0, 0, 0.35) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* text overlay on top of everything */
+.partner-card-overlay {
+  position: relative;
+  z-index: 3;
+}
+
+/* Angled duotone "wedge" with soft diagonal edge */
+.partner-duo-spot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  /* Diagonal duotone that fades out */
+  background: linear-gradient(
+    24deg,
+    rgba(99, 101, 184, 0.95) 0%,   /* #6365b8 at corner */
+    rgba(142, 153, 232, 0.9) 6%,  /* #8e99e8 close to corner */
+    rgba(142, 153, 232, 0.0) 35%   /* fade to transparent along diagonal */
+  );
+
+  mix-blend-mode: color;
+  opacity: 0.9;
+
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+/* On hover, full duotone takes over, patch fades out */
+.partner-card:hover .partner-duo-spot {
+  opacity: 0;
+}
+/* Clean, white-biased subtle metallic text effect */
+.text-metallic {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fafafa 25%,
+    #f2f2f2 55%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* make edges sharp & premium */
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+}
+/* Remove default Bootstrap caret */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Add clean minimalistic 2-line chevron */
+.nav-link.dropdown-toggle {
+  position: relative;
+  padding-right: 22px !important; /* space for arrow */
+}
+
+.nav-link.dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  width: 7px;
+  height: 7px;
+
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+
+  transform: translateY(-55%) rotate(45deg);
+  opacity: 0.9;
+  transition: transform 0.25s ease;
+}
+
+/* Rotate arrow when dropdown opens */
+.nav-link.dropdown-toggle[aria-expanded="true"]::before {
+  transform: translateY(-30%) rotate(225deg);
+}
+/* DESKTOP — bring arrow closer to text */
+@media (min-width: 992px) {
+  .nav-link.dropdown-toggle {
+    padding-right: 15px !important;   /* closer */
+  }
+
+  .nav-link.dropdown-toggle::before {
+    right: 4px;                       /* shift arrow left */
+    width: 6px;
+    height: 6px;                      /* slightly tighter arrow */
+  }
+}
+/* MOBILE: align call button to the right inside hamburger */
+@media (max-width: 991.98px) {
+
+  /* give the collapse some padding */
+  #mainNavbar {
+    padding: 20px !important;
+  }
+
+  /* space between nav links and button */
+  #mainNavbar .navbar-nav {
+    align-items: flex-end !important;
+    margin-bottom: 20px; /* gap from tabs to button */
+  }
+
+  /* push the call button to the right */
+  #mainNavbar .btn-cta,
+  #mainNavbar .btn-white-cut,
+  #mainNavbar button {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+}
+/* Big 3-column stats under intro */
+.about-highlight-stats {
+  margin-top: 1.75rem;
+}
+
+.about-highlight-stat {
+  text-align: left;
+}
+
+.about-highlight-value {
+  font-size: 3rem;         /* bigger than regular about-stat-value */
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #042533;
+}
+
+.about-highlight-label {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #6a7c87;
+}
+@media (max-width: 576px) {
+    .about-highlight-value {
+  font-size: 2rem;         /* bigger than regular about-stat-value */
+    }
+  .about-highlight-stats {
+    gap: 30px !important;
   }
 }
