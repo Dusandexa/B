@@ -814,27 +814,11 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 
   /* dropdown items (optional, to match style) */
   #mainNavbar .dropdown-menu .dropdown-item {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
     text-align: right;
   }
 }
-/* DROPDOWN MENU — new color, transparency, blur */
-.dropdown-menu {
-  background-color: rgba(1, 36, 36, 0.3) !important; /* #012424 with light transparency */
-  backdrop-filter: blur(26px) !important;              /* blur background behind */
-  -webkit-backdrop-filter: blur(12px) !important;
-  border: none !important;                             /* optional: remove bootstrap border */
-}
 
-/* Dropdown items text color (optional) */
-.dropdown-menu .dropdown-item {
-  color: #ffffff !important;
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
-}
 /* Make navbar transparent + blurred */
 .navbar-custom {
   background-color: rgba(19, 48, 52, 0.90) !important;  /* transparency */
@@ -851,6 +835,8 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+
 /* Replace background-image system with a real zoomable image layer */
 .partner-card {
   position: relative;
@@ -1115,5 +1101,151 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
     }
   .about-highlight-stats {
     gap: 30px !important;
+  }
+    /* make cards a bit taller on small phones */
+  .partner-card {
+    min-height: 600px;
+  }
+
+  /* Bojana image – shift + slight zoom */
+  .partner-card-left::before {
+    background-position: 32% 10%;   /* left/right , top/bottom */
+    transform: scale(1);
+  }
+
+  /* Bojan image – different framing + slight zoom */
+  .partner-card-right::before {
+    background-position: 40% 12%;
+    transform: scale(1);
+  }
+
+  /* keep hover scale from changing it on touch devices */
+  .partner-card:hover::before {
+    transform: scale(1.18);
+  }
+}
+/* =============================
+   SITE FOOTER – BB LAW
+   ============================= */
+
+.site-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5rem 0 3.5rem; /* more padding on entire footer */
+}
+
+.footer-container {
+  max-width: 1120px;
+}
+
+/* Brand */
+.footer-brand-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: radial-gradient(circle at 30% 20%, #9ce3ff, #4b6cff 45%, #6ffff1);
+}
+
+/* Mission text */
+.footer-mission {
+  max-width: 520px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Nav links */
+.footer-nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.footer-nav-link:hover {
+  color: #ffffff;
+}
+
+/* CTA buttons – always 2 columns via col-6 */
+.footer-cta-grid .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.footer-cta-badge {
+  display: block;
+  padding: 0.9rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer-cta-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+/* Divider */
+.footer-divider {
+  margin: 2.6rem 0 1.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Bottom row */
+.footer-copy {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Social icons */
+.footer-social {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.footer-social:hover {
+  opacity: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .site-footer {
+    padding: 4.2rem 0 3.2rem;
+  }
+
+  .footer-mission {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    gap: 1rem;
   }
 }
