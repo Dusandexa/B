@@ -1254,7 +1254,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 
   /* Move hero image (X%, Y%) */
   .hero.hero-law .hero-bg {
-    background-position: 45% 87% !important;
-    background-size: 235% !important;
+    background-position: 45% 102% !important;
+    background-size: 162% !important;
   }
 }
