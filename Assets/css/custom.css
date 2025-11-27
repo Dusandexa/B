@@ -334,7 +334,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 
 @media (max-width: 767.98px) {
   .hero.hero-law {
-    min-height: 90vh;
+    min-height: 80vh;
   }
 
   .hero.hero-law .hero-container {
