@@ -59,4 +59,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // Fallback: run on load
     runCounters();
   }
+
+  // =============================
+  // DROPDOWN HOVER ON DESKTOP
+  // =============================
+  const dropdownToggle = document.getElementById('moreLinksDropdown');
+  const dropdownItem = dropdownToggle ? dropdownToggle.closest('.nav-item.dropdown') : null;
+
+  if (dropdownToggle && dropdownItem) {
+    // Desktop: hover to show, click to navigate to link
+    if (window.innerWidth >= 992) {
+      // Prevent Bootstrap toggle on desktop
+      dropdownToggle.addEventListener('click', function(e) {
+        // Allow navigation to legal-fields.html
+        window.location.href = this.getAttribute('href');
+      });
+
+      // Show dropdown on hover
+      dropdownItem.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown-menu').classList.add('show');
+      });
+
+      dropdownItem.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    }
+  }
 });
