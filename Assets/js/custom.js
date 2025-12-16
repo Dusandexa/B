@@ -86,3 +86,51 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+  // ...your existing code above stays as-is...
+
+  if (window.jQuery && $.fn.validate) {
+    // Add custom email validation with stricter pattern
+    $.validator.addMethod("strictEmail", function(value, element) {
+      // Pattern requires: name@domain.tld (at least 2 chars for TLD)
+      var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return this.optional(element) || pattern.test(value);
+    }, "Please enter a valid email address.");
+
+    $("#contactForm").validate({
+      rules: {
+        name: { required: true, minlength: 2 },
+        email: { required: true, strictEmail: true },
+        subject: { required: true, minlength: 3 },
+        message: { required: true, minlength: 10 }
+      },
+      messages: {
+        name: "Please enter your full name.",
+        email: "Please enter a valid email address.",
+        subject: "Please add a short subject.",
+        message: "Please write at least 10 characters."
+      },
+      errorPlacement: function (error, element) {
+        error.addClass("invalid-feedback");
+        element.after(error);
+      },
+      highlight: function (element) {
+        $(element).addClass("is-invalid").removeClass("is-valid");
+      },
+      unhighlight: function (element) {
+        $(element).removeClass("is-invalid").addClass("is-valid");
+      },
+      submitHandler: function (form) {
+        if (!grecaptcha.getResponse()) {
+          $(".captcha-error").text("Please confirm you’re not a robot.").show();
+          return false;
+        }
+        $(".captcha-error").hide();
+        form.submit();
+      }
+    });
+  } else {
+    console.warn("jQuery or jQuery Validation is missing.");
+  }
+});
