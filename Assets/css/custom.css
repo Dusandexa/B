@@ -1191,27 +1191,31 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 .partner-card:hover .partner-duo-spot {
   opacity: 0;
 }
-/* Metallic text with a safe fallback */
-.text-metallic {
-  /* fallback color if background-clip doesn't work */
-  color: #ffffff;
-
-  background: linear-gradient(
+/* Metallic text - robust (prevents invisible text on some deployments) */
+.text-metallic{
+  display: inline-block; /* important for background-clip stability */
+  background-image: linear-gradient(
     to bottom,
     #ffffff 0%,
     #fafafa 25%,
     #f2f2f2 55%,
     #ffffff 100%
-  );
+  ) !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* default to visible */
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
 }
 
-/* Only turn text transparent when clip-text is supported */
+/* If clip-text is supported, then we safely turn fill transparent */
 @supports (-webkit-background-clip: text) or (background-clip: text) {
-  .text-metallic {
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; /* important for Safari/Chromium */
-    color: transparent;
+  .text-metallic{
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
   }
 }
 /* Remove default Bootstrap caret */
