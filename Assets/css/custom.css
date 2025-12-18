@@ -1191,8 +1191,11 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 .partner-card:hover .partner-duo-spot {
   opacity: 0;
 }
-/* Clean, white-biased subtle metallic text effect */
+/* Metallic text with a safe fallback */
 .text-metallic {
+  /* fallback color if background-clip doesn't work */
+  color: #ffffff;
+
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
@@ -1200,13 +1203,16 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
     #f2f2f2 55%,
     #ffffff 100%
   );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+}
 
-  /* make edges sharp & premium */
-  -webkit-font-smoothing: antialiased;
-  font-smooth: always;
+/* Only turn text transparent when clip-text is supported */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .text-metallic {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* important for Safari/Chromium */
+    color: transparent;
+  }
 }
 /* Remove default Bootstrap caret */
 .nav-link.dropdown-toggle::after {
