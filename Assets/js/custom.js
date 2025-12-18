@@ -123,10 +123,48 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       submitHandler: function (form) {
         if (!grecaptcha.getResponse()) {
-          $(".captcha-error").text("Please confirm you’re not a robot.").show();
+          $(".captcha-error").text("Please confirm you're not a robot.").show();
           return false;
         }
         $(".captcha-error").hide();
+        form.submit();
+      }
+    });
+
+    // Career form validation
+    $("#careerForm").validate({
+      rules: {
+        name: { required: true, minlength: 2 },
+        email: { required: true, strictEmail: true },
+        phone: { required: true, minlength: 8 },
+        position: { required: true },
+        message: { required: true, minlength: 20 },
+        cv: { required: true, extension: "pdf|doc|docx" }
+      },
+      messages: {
+        name: "Please enter your full name.",
+        email: "Please enter a valid email address.",
+        phone: "Please enter your phone number.",
+        position: "Please select a position.",
+        message: "Please write at least 20 characters about yourself.",
+        cv: "Please upload your CV (PDF, DOC, or DOCX format)."
+      },
+      errorPlacement: function (error, element) {
+        error.addClass("invalid-feedback");
+        element.after(error);
+      },
+      highlight: function (element) {
+        $(element).addClass("is-invalid").removeClass("is-valid");
+      },
+      unhighlight: function (element) {
+        $(element).removeClass("is-invalid").addClass("is-valid");
+      },
+      submitHandler: function (form) {
+        if (!grecaptcha.getResponse()) {
+          $(".captcha-error-career").text("Please confirm you're not a robot.").show();
+          return false;
+        }
+        $(".captcha-error-career").hide();
         form.submit();
       }
     });
@@ -134,3 +172,12 @@ document.addEventListener("DOMContentLoaded", function () {
     console.warn("jQuery or jQuery Validation is missing.");
   }
 });
+
+// reCAPTCHA callbacks
+function recaptchaCallback() {
+  $(".captcha-error").hide();
+}
+
+function recaptchaCallbackCareer() {
+  $(".captcha-error-career").hide();
+}

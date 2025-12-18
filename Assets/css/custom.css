@@ -1046,6 +1046,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   content: "";
   position: absolute;
   inset: 0;
+  background-image: var(--card-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1053,7 +1054,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   transition: transform 0.6s ease; /* smooth zoom */
 }
 
-/* assign background images from inline styles */
+/* Fallback for specific classes if needed */
 .partner-card-left::before {
   background-image: url("../images/bojana-miljanovic.png");
 }
@@ -1061,9 +1062,6 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 .partner-card-right::before {
   background-image: url("../images/Bojan_Vuckovic.jpg");
 }
-
-.team-card-3::before { background-image: url("https://media.istockphoto.com/id/2215974791/photo/job-interview.jpg?s=2048x2048&w=is&k=20&c=JEtiF2od77l7jmNb--wQD4Hfhylt5Ci_X3xbRI7QSnw="); }
-.team-card-4::before { background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1740&auto=format&fit=crop"); }
 
 /* Zoom only the photo, not the whole card */
 .partner-card:hover::before {
@@ -1736,8 +1734,19 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   transition: color 0.25s ease;
 }
 
+/* Title color text on jurisdictions page */
+.jurisdictions-page .vs-step {
+  color: #133034;
+  cursor: default;
+}
+
 .vs-step:hover {
   color:  var(--accent-light);
+}
+
+/* Remove hover on jurisdictions page */
+.jurisdictions-page .vs-step:hover {
+  color: #133034;
 }
 
 .vs-step.active {
