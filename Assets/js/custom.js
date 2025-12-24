@@ -63,28 +63,33 @@ document.addEventListener("DOMContentLoaded", function () {
   // =============================
   // DROPDOWN HOVER ON DESKTOP
   // =============================
-  const dropdownToggle = document.getElementById('moreLinksDropdown');
-  const dropdownItem = dropdownToggle ? dropdownToggle.closest('.nav-item.dropdown') : null;
+  const dropdownToggles = document.querySelectorAll('.nav-link.dropdown-toggle');
+  
+  dropdownToggles.forEach(function(dropdownToggle) {
+    const dropdownItem = dropdownToggle.closest('.nav-item.dropdown');
 
-  if (dropdownToggle && dropdownItem) {
-    // Desktop: hover to show, click to navigate to link
-    if (window.innerWidth >= 992) {
-      // Prevent Bootstrap toggle on desktop
-      dropdownToggle.addEventListener('click', function(e) {
-        // Allow navigation to legal-fields.html
-        window.location.href = this.getAttribute('href');
-      });
+    if (dropdownToggle && dropdownItem) {
+      // Desktop: hover to show, click to navigate to link
+      if (window.innerWidth >= 992) {
+        // Prevent Bootstrap toggle on desktop, navigate to href instead
+        dropdownToggle.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href && href !== '#') {
+            window.location.href = href;
+          }
+        });
 
-      // Show dropdown on hover
-      dropdownItem.addEventListener('mouseenter', function() {
-        this.querySelector('.dropdown-menu').classList.add('show');
-      });
+        // Show dropdown on hover
+        dropdownItem.addEventListener('mouseenter', function() {
+          this.querySelector('.dropdown-menu').classList.add('show');
+        });
 
-      dropdownItem.addEventListener('mouseleave', function() {
-        this.querySelector('.dropdown-menu').classList.remove('show');
-      });
+        dropdownItem.addEventListener('mouseleave', function() {
+          this.querySelector('.dropdown-menu').classList.remove('show');
+        });
+      }
     }
-  }
+  });
 });
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -181,3 +186,30 @@ function recaptchaCallback() {
 function recaptchaCallbackCareer() {
   $(".captcha-error-career").hide();
 }
+
+// Language Switcher Toggle
+document.addEventListener("DOMContentLoaded", function() {
+  const langSwitcher = document.querySelector('.lang-switcher');
+  const langToggle = document.querySelector('.lang-toggle');
+  
+  if (langToggle && langSwitcher) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langSwitcher.classList.toggle('show');
+    });
+    
+    // Close when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!langSwitcher.contains(e.target)) {
+        langSwitcher.classList.remove('show');
+      }
+    });
+    
+    // Close on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        langSwitcher.classList.remove('show');
+      }
+    });
+  }
+});

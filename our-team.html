@@ -51,13 +51,23 @@
                 Legal Fields
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
+                <li class="d-lg-none"><a class="dropdown-item" href="legal-fields.html">All Legal Fields</a></li>
                 <li><a class="dropdown-item" href="#">Competition / Antitrust Law</a></li>
                 <li><a class="dropdown-item" href="#">Telecommunications Law</a></li>
                 <li><a class="dropdown-item" href="#">Commercial Law</a></li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="jurisdictions.html">Regions</a></li>
-            <li class="nav-item"><a class="nav-link active" href="our-team.html">Our Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="our-team.html" id="teamDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Team
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark ptb-0">
+                <li class="d-lg-none"><a class="dropdown-item" href="our-team.html">Meet the Team</a></li>
+                <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+              </ul>
+            </li>
             <li class="nav-item"><a class="nav-link" href="News.html">News</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact us today</a></li>
           </ul>
@@ -65,6 +75,24 @@
           <a class="btn btn-white-cut mt-3 mt-lg-0" href="tel:+3811182145">
             Call +3811182145
           </a>
+
+          <!-- Language Switcher -->
+          <div class="lang-switcher">
+            <button class="lang-toggle" aria-label="Change language">
+              <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
+              <span class="lang-arrow"></span>
+            </button>
+            <div class="lang-dropdown">
+              <a href="#" class="lang-option active" data-lang="sr">
+                <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
+                Srpski
+              </a>
+              <a href="#" class="lang-option" data-lang="en">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />
+                English
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -82,6 +110,10 @@
             <h1 class="contact-title mb-0">
               Dedicated professionals committed to clarity, precision, and results.
             </h1>
+
+            <p class="team-join-cta mt-3">
+              Interested in joining our team? <a href="careers.html" class="team-join-link">Fill the form <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
+            </p>
           </div>
         </div>
       </div>
@@ -94,14 +126,8 @@
       <!-- Partner 1 -->
       <div class="col-12 col-md-6">
         <article class="partner-card partner-card-left">
-<<<<<<< HEAD
-          <div class="partner-gradient-bottom"></div>
-          <div class="partner-duo-spot"></div>
-
-=======
               <div class="partner-gradient-bottom"></div>
                 <div class="partner-duo-spot"></div>
->>>>>>> 4b71dfc47b1bbd70defb1418a07093406d6753a4
           <div class="partner-card-overlay">
             
             <h3 class="partner-name text-metallic">Bojana Miljanović</h3>
@@ -121,14 +147,8 @@
       <!-- Partner 2 -->
       <div class="col-12 col-md-6">
         <article class="partner-card partner-card-right">
-<<<<<<< HEAD
-          <div class="partner-gradient-bottom"></div>
-          <div class="partner-duo-spot"></div>
-
-=======
               <div class="partner-gradient-bottom"></div>
                 <div class="partner-duo-spot"></div>
->>>>>>> 4b71dfc47b1bbd70defb1418a07093406d6753a4
           <div class="partner-card-overlay">
            
             <h3 class="partner-name text-metallic">Bojan Vučković</h3>
@@ -144,124 +164,6 @@
           </div>
         </article>
       </div>
-    </div>
-  </div>
-</section>
-
-<<<<<<< HEAD
-      <!-- TEAM MEMBER 3 -->
-      <div class="col-12 col-md-6">
-        <article class="partner-card team-card-3">
-          <div class="partner-gradient-bottom"></div>
-          <div class="partner-duo-spot"></div>
-=======
-<!-- JOIN OUR TEAM SECTION -->
-<section class="contact-section">
-  <div class="container hero-container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        
-        <div class="about-label d-flex align-items-center mb-3">
-          <span class="about-label-dot me-2"></span>
-          <span class="about-label-text">Careers</span>
-        </div>
-
-        <h2 class="contact-title mb-4">
-          Join our team. 
-        </h2>
-
-        <div class="contact-form-wrap">
-          <form id="careerForm" class="contact-form" action="#" method="post" enctype="multipart/form-data">
-            <div class="row g-3">
-
-              <div class="col-12 col-md-6">
-                <label class="contact-label" for="careerName">Full name</label>
-                <input class="contact-input" id="careerName" name="name" type="text" placeholder="Your name" />
-              </div>
-
-              <div class="col-12 col-md-6">
-                <label class="contact-label" for="careerEmail">Email</label>
-                <input class="contact-input" id="careerEmail" name="email" type="email" placeholder="you@email.com" />
-              </div>
-
-              <div class="col-12 col-md-6">
-                <label class="contact-label" for="careerPhone">Phone number</label>
-                <input class="contact-input" id="careerPhone" name="phone" type="tel" placeholder="+381 11..." />
-              </div>
-
-              <div class="col-12 col-md-6">
-                <label class="contact-label" for="careerPosition">Position of interest</label>
-                <select class="contact-input" id="careerPosition" name="position">
-                  <option value="">Select a position...</option>
-                  <option value="Associate Attorney">Associate Attorney</option>
-                  <option value="Senior Associate">Senior Associate</option>
-                  <option value="Legal Counsel">Legal Counsel</option>
-                  <option value="Junior Lawyer">Junior Lawyer</option>
-                  <option value="Paralegal">Paralegal</option>
-                  <option value="Legal Assistant">Legal Assistant</option>
-                  <option value="Internship">Internship</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-
-              <div class="col-12">
-                <label class="contact-label" for="careerMsg">Cover letter / Message</label>
-                <textarea class="contact-textarea" id="careerMsg" name="message" rows="5"
-                  placeholder="Tell us about yourself and why you'd like to join our team..."></textarea>
-              </div>
-
-              <div class="col-12">
-                <label class="contact-label" for="careerCV">CV / Resume (PDF, DOC, DOCX)</label>
-                <input class="contact-input" id="careerCV" name="cv" type="file" accept=".pdf,.doc,.docx" />
-              </div>
-
-              <!-- reCAPTCHA -->
-              <div class="col-12">
-                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="recaptchaCallbackCareer"></div>
-                <div class="captcha-error-career small mt-2" style="display:none;"></div>
-              </div>
-
-              <div class="col-12 d-flex justify-content-end">
-                <button type="submit" class="btn-black-cut">
-                  Submit application
-                  <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="currentColor">
-                    <path d="M120-120v-720l760 360-760 360Zm80-126 474-234-474-234v168l240 66-240 66v168Z" />
-                  </svg>
-                </button>
-              </div>
-
-            </div>
-          </form>
-        </div>
->>>>>>> 4b71dfc47b1bbd70defb1418a07093406d6753a4
-
-      </div>
-<<<<<<< HEAD
-
-      <!-- TEAM MEMBER 4 -->
-      <div class="col-12 col-md-6">
-        <article class="partner-card team-card-4">
-          <div class="partner-gradient-bottom"></div>
-          <div class="partner-duo-spot"></div>
-
-          <div class="partner-card-overlay">
-            <h3 class="partner-name text-metallic">Associate Name</h3>
-            <p class="partner-role underline-accent">Legal Counsel</p>
-            <p class="partner-text">
-              Advising clients on regulatory compliance and telecommunications law.
-            </p>
-            <a href="#" class="btn-partner-outline">
-              View profile
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-      </div>
-
-=======
->>>>>>> 4b71dfc47b1bbd70defb1418a07093406d6753a4
     </div>
   </div>
 </section>
@@ -287,10 +189,11 @@
         </p>
 
         <nav class="footer-nav d-flex flex-wrap gap-4">
-          <a href="index.html" class="footer-nav-link">Homepage</a>
+          <a href="index.html" class="footer-nav-link">Home</a>
           <a href="legal-fields.html" class="footer-nav-link">Legal Fields</a>
           <a href="jurisdictions.html" class="footer-nav-link">Regions</a>
           <a href="our-team.html" class="footer-nav-link">Our Team</a>
+          <a href="careers.html" class="footer-nav-link">Careers</a>
           <a href="News.html" class="footer-nav-link">News</a>
           <a href="contact.html" class="footer-nav-link">Contact Us</a>
         </nav>

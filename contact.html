@@ -58,6 +58,7 @@
                 class="dropdown-menu dropdown-menu-dark ptb-0"
                 aria-labelledby="moreLinksDropdown"
               >
+                <li class="d-lg-none"><a class="dropdown-item" href="legal-fields.html">All Legal Fields</a></li>
                 <li><a class="dropdown-item" href="#">Competition / Antitrust Law</a></li>
                 <li><a class="dropdown-item" href="#">Telecommunications Law</a></li>
                 <li><a class="dropdown-item" href="#">Commercial Law</a></li>
@@ -66,8 +67,15 @@
             <li class="nav-item">
               <a class="nav-link" href="jurisdictions.html">Regions</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="our-team.html">Our Team</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="our-team.html" id="teamDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Team
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark ptb-0">
+                <li class="d-lg-none"><a class="dropdown-item" href="our-team.html">Meet the Team</a></li>
+                <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="News.html">News</a>
@@ -79,6 +87,24 @@
           </ul>
 
           <button class="btn btn-white-cut mt-3 mt-lg-0">Call +3811182145</button>
+
+          <!-- Language Switcher -->
+          <div class="lang-switcher">
+            <button class="lang-toggle" aria-label="Change language">
+              <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
+              <span class="lang-arrow"></span>
+            </button>
+            <div class="lang-dropdown">
+              <a href="#" class="lang-option active" data-lang="sr">
+                <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
+                Srpski
+              </a>
+              <a href="#" class="lang-option" data-lang="en">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />
+                English
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -244,9 +270,11 @@
             </p>
 
             <nav class="footer-nav d-flex flex-wrap gap-4">
-              <a href="index.html" class="footer-nav-link">Homepage</a>
+              <a href="index.html" class="footer-nav-link">Home</a>
               <a href="legal-fields.html" class="footer-nav-link">Legal Fields</a>
+              <a href="jurisdictions.html" class="footer-nav-link">Regions</a>
               <a href="our-team.html" class="footer-nav-link">Our Team</a>
+              <a href="careers.html" class="footer-nav-link">Careers</a>
               <a href="News.html" class="footer-nav-link">News</a>
               <a href="contact.html" class="footer-nav-link">Contact Us</a>
             </nav>
