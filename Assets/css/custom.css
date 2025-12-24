@@ -1046,6 +1046,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   content: "";
   position: absolute;
   inset: 0;
+  background-image: var(--card-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1053,7 +1054,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   transition: transform 0.6s ease; /* smooth zoom */
 }
 
-/* assign background images from inline styles */
+/* Fallback for specific classes if needed */
 .partner-card-left::before {
   background-image: url("../images/bojana-miljanovic.png");
 }
@@ -1062,8 +1063,8 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   background-image: url("../images/Bojan_Vuckovic.jpg");
 }
 
-.team-card-3::before { background-image: url("https://images.pexels.com/photos/4427619/pexels-photo-4427619.jpeg?_gl=1*7ql1cn*_ga*ODE3MjgzODIwLjE3NTU4NzMzMTE.*_ga_8JE65Q40S6*czE3NjU5NTg4OTkkbzEzJGcxJHQxNzY1OTU4OTY4JGo1NSRsMCRoMA.."); }
-.team-card-4::before { background-image: url("https://images.pexels.com/photos/4427621/pexels-photo-4427621.jpeg?_gl=1*swmo2g*_ga*ODE3MjgzODIwLjE3NTU4NzMzMTE.*_ga_8JE65Q40S6*czE3NjU5NTg4OTkkbzEzJGcxJHQxNzY1OTU4OTI4JGozMSRsMCRoMA.."); }
+.team-card-3::before { background-image: url("https://media.istockphoto.com/id/2215974791/photo/job-interview.jpg?s=2048x2048&w=is&k=20&c=JEtiF2od77l7jmNb--wQD4Hfhylt5Ci_X3xbRI7QSnw="); }
+.team-card-4::before { background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1740&auto=format&fit=crop"); }
 
 /* Zoom only the photo, not the whole card */
 .partner-card:hover::before {
@@ -1193,22 +1194,32 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 .partner-card:hover .partner-duo-spot {
   opacity: 0;
 }
-/* Clean, white-biased subtle metallic text effect */
-.text-metallic {
-  background: linear-gradient(
+/* Metallic text - robust (prevents invisible text on some deployments) */
+.text-metallic{
+  display: inline-block; /* important for background-clip stability */
+  background-image: linear-gradient(
     to bottom,
     #ffffff 0%,
     #fafafa 25%,
     #f2f2f2 55%,
     #ffffff 100%
-  );
+  ) !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
 
-  /* make edges sharp & premium */
-  -webkit-font-smoothing: antialiased;
-  font-smooth: always;
+  /* default to visible */
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* If clip-text is supported, then we safely turn fill transparent */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .text-metallic{
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+  }
 }
 /* Remove default Bootstrap caret */
 .nav-link.dropdown-toggle::after {
@@ -1736,8 +1747,19 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   transition: color 0.25s ease;
 }
 
+/* Title color text on jurisdictions page */
+.jurisdictions-page .vs-step {
+  color: #133034;
+  cursor: default;
+}
+
 .vs-step:hover {
   color:  var(--accent-light);
+}
+
+/* Remove hover on jurisdictions page */
+.jurisdictions-page .vs-step:hover {
+  color: #133034;
 }
 
 .vs-step.active {
