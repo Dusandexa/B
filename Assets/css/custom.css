@@ -1062,8 +1062,8 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   background-image: url("../images/Bojan_Vuckovic.jpg");
 }
 
-.team-card-3::before { background-image: url("https://media.istockphoto.com/id/2215974791/photo/job-interview.jpg?s=2048x2048&w=is&k=20&c=JEtiF2od77l7jmNb--wQD4Hfhylt5Ci_X3xbRI7QSnw="); }
-.team-card-4::before { background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1740&auto=format&fit=crop"); }
+.team-card-3::before { background-image: url("https://images.pexels.com/photos/4427619/pexels-photo-4427619.jpeg?_gl=1*7ql1cn*_ga*ODE3MjgzODIwLjE3NTU4NzMzMTE.*_ga_8JE65Q40S6*czE3NjU5NTg4OTkkbzEzJGcxJHQxNzY1OTU4OTY4JGo1NSRsMCRoMA.."); }
+.team-card-4::before { background-image: url("https://images.pexels.com/photos/4427621/pexels-photo-4427621.jpeg?_gl=1*swmo2g*_ga*ODE3MjgzODIwLjE3NTU4NzMzMTE.*_ga_8JE65Q40S6*czE3NjU5NTg4OTkkbzEzJGcxJHQxNzY1OTU4OTI4JGozMSRsMCRoMA.."); }
 
 /* Zoom only the photo, not the whole card */
 .partner-card:hover::before {
