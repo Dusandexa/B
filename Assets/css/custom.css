@@ -517,7 +517,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   font-size: clamp(2.1rem, 2.4vw + 1.2rem, 3rem);
   font-weight: 600;
   letter-spacing: -0.03em;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .hero-title-em {
@@ -1017,6 +1017,7 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
+  padding-right: 0.1em; /* prevent last letter clipping */
 }
 
 .partner-text {
@@ -1347,9 +1348,11 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
     #ffffff 100%
   ) !important;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 200%; /* extra space for descenders */
   -webkit-background-clip: text;
   background-clip: text;
+  padding-bottom: 0.1em; /* prevent descender clipping */
+  padding-right: 0.15em; /* prevent right side clipping */
 
   /* default to visible */
   color: #ffffff !important;
