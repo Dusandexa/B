@@ -10,16 +10,24 @@ $page_desc = 'Sa preko 10 godina specijalizovanog pravnog iskustva, pružamo pre
 $current_lang = 'sr';
 $current_page = 'home';
 $page_image = '/Assets/images/og-home.jpg';
-
-// Include head (DOCTYPE, meta tags, hreflang)
-include '../includes/head.php';
 ?>
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?= $page_title ?></title>
+<meta name="description" content="<?= $page_desc ?>">
+<link rel="canonical" href="https://yourwebsite.com/sr/">
+<link rel="alternate" hreflang="en" href="https://yourwebsite.com/">
+<link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/">
+<link rel="alternate" hreflang="x-default" href="https://yourwebsite.com/">
 
 <!-- Bootstrap 5.3 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <!-- Custom styles -->
-<link rel="stylesheet" href="../Assets/css/custom.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -77,7 +85,7 @@ include '../includes/head.php';
               <a class="nav-link" href="/sr/vesti">Vesti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sr/kontakt">Kontaktirajte nas danas</a>
+              <a class="nav-link" href="/sr/kontakt">Kontaktirajte nas</a>
             </li>
           </ul>
 
@@ -319,7 +327,7 @@ include '../includes/head.php';
         <div class="row footer-cta-grid g-3">
           <div class="col-5">
             <a href="tel:+3811182145" class="btn-white-cut footer-cta-btn">
-              Pozovite Nas <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6365b8"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+              Pozovite <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6365b8"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
             </a>
           </div>
           <div class="col-7">
@@ -364,3 +372,4 @@ include '../includes/head.php';
 
 </body>
 </html>
+

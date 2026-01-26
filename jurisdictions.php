@@ -10,7 +10,7 @@ include 'includes/header.php';
 ?>
 
     <!-- JURISDICTIONS INTRO -->
-    <section class="about-section">
+    <section class="about-section jurisdictions-page">
       <div class="container hero-container">
         <div class="row">
           <div class="col-12 col-lg-8">
@@ -28,7 +28,7 @@ include 'includes/header.php';
     </section>
 
     <!-- JURISDICTIONS LIST & CLIENTS -->
-    <section class="value-steps-section py-5" style="background-color: #ffffff; color: #000000;">
+    <section class="value-steps-section jurisdictions-page py-5" style="background-color: #ffffff; color: #000000;">
       <div class="container hero-container">
         <div class="row">
           <!-- Left column: Countries -->
