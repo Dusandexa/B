@@ -1,6 +1,10 @@
 <?php
 declare(strict_types=1);
-session_start();
+
+// Start session only if not already started
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // ====== CONFIG: set your users here ======
 $USERS = [
