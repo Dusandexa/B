@@ -41,7 +41,7 @@ include 'includes/header.php';
                 <div class="news-author-card">
                   <div class="news-author-avatar">
                     <img
-                      src="Assets/images/bojana-miljanovic.png"
+                      src="assets/images/bojana-miljanovic.png"
                       alt="Author"
                     />
                   </div>

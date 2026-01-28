@@ -129,11 +129,11 @@ include 'includes/head.php';
   <div class="hero-stats-panel">
     <div class="hero-stats">
       <div class="hero-stat hero-stat-logo">
-  <img src="Assets/images/chambers-top-ranked-europe-2025.png" alt="Chambers Top Ranked Europe 2025" class="hero-stat-logo-img">
+  <img src="assets/images/chambers-top-ranked-europe-2025.png" alt="Chambers Top Ranked Europe 2025" class="hero-stat-logo-img">
 </div>
 
 <div class="hero-stat hero-stat-logo">
-  <img src="Assets/images/Legal-500-leading-partner-EMEA.jpg" alt="Legal 500 Leading Partner EMEA" class="hero-stat-logo-img">
+  <img src="assets/images/Legal-500-leading-partner-EMEA.jpg" alt="Legal 500 Leading Partner EMEA" class="hero-stat-logo-img">
 </div>
 
 <div class="hero-stat">
@@ -195,10 +195,10 @@ include 'includes/head.php';
 
   <div class="container-fluid px-0">
     <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center align-items-center gap-5 py-4">
-      <img src="Assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
-      <img src="Assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
-      <img src="Assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
-      <img src="Assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
+      <img src="assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+      <img src="assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+      <img src="assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+      <img src="assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
     </div>
   </div>
 </section>
@@ -359,7 +359,7 @@ include 'includes/head.php';
 
   <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="Assets/js/custom.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 </html>

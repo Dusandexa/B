@@ -3,7 +3,7 @@ $page_title = 'Legal Fields - BnB LAW | Competition, Telecommunications & Commer
 $page_desc = 'Specialized legal services in Competition/Antitrust Law, Telecommunications Law, and Commercial Law. Deep expertise protecting your interests across Southeast Europe.';
 $current_lang = 'en';
 $current_page = 'legal-fields';
-$page_image = 'https://yourwebsite.com/Assets/images/og-legal-fields.jpg'; // Optional
+$page_image = 'https://yourwebsite.com/assets/images/og-legal-fields.jpg'; // Optional
 
 include 'includes/head.php';
 include 'includes/header.php';
@@ -105,10 +105,10 @@ include 'includes/header.php';
     <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center align-items-center gap-5 py-4">
 
       <!-- 6 logos total -->
-      <img src="Assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
-      <img src="Assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
-      <img src="Assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
-      <img src="Assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
+      <img src="assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+      <img src="assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+      <img src="assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+      <img src="assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
 
     </div>
   </div>

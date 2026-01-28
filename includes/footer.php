@@ -110,7 +110,7 @@ $current_year = date('Y');
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 
   <!-- Custom JS -->
-  <script src="/Assets/js/custom.js"></script>
+  <script src="/assets/js/custom.js"></script>
 
   <!-- Google reCAPTCHA -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>

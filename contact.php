@@ -3,7 +3,7 @@ $page_title = 'Contact Us - BnB LAW | Professional Legal Services';
 $page_desc = 'Get in touch with BnB LAW for professional legal counsel in competition law, telecommunications, and commercial matters. We respond within 1 business day.';
 $current_lang = 'en';
 $current_page = 'contact';
-$page_image = 'https://yourwebsite.com/Assets/images/og-contact.jpg'; // Optional: add your image
+$page_image = 'https://yourwebsite.com/assets/images/og-contact.jpg'; // Optional: add your image
 
 include 'includes/head.php';
 include 'includes/header.php';

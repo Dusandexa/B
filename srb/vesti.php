@@ -3,7 +3,7 @@ $page_title = 'Vesti i Analize - BnB LAW | Članci o Pravnoj Ekspertizi';
 $page_desc = 'Najnovije analize, trendovi i članci o pravu konkurencije, telekomunikacionim propisima, privrednim ugovorima i pravnim dešavanjima širom Jugoistočne Evrope.';
 $current_lang = 'srb';
 $current_page = 'news';
-$page_image = '/Assets/images/og-news.jpg';
+$page_image = '/assets/images/og-news.jpg';
 
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $page_image = '/Assets/images/og-news.jpg';
 <meta name="description" content="<?= $page_desc ?>">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
@@ -227,7 +227,7 @@ $page_image = '/Assets/images/og-news.jpg';
 </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/Assets/js/custom.js"></script>
+<script src="/assets/js/custom.js"></script>
 </body>
 </html>
 

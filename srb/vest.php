@@ -15,7 +15,7 @@ $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80
 <meta name="description" content="<?= $page_desc ?>">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
@@ -84,7 +84,7 @@ $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80
                 <div class="news-author-card">
                   <div class="news-author-avatar">
                     <img
-                      src="../Assets/images/bojana-miljanovic.png"
+                      src="../assets/images/bojana-miljanovic.png"
                       alt="Author"
                     />
                   </div>
@@ -191,7 +191,7 @@ $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80
 </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/Assets/js/custom.js"></script>
+<script src="/assets/js/custom.js"></script>
 </body>
 </html>
 

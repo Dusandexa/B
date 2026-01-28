@@ -3,7 +3,7 @@ $page_title = 'Naš Tim - BnB LAW | Stručni Pravni Profesionalci';
 $page_desc = 'Upoznajte naš posvećeni tim pravnih profesionalaca. Bojana Miljanović i Bojan Vučković donose duboku ekspertizu u pravu konkurencije, telekomunikacija i privrednim pitanjima.';
 $current_lang = 'srb';
 $current_page = 'team';
-$page_image = '/Assets/images/og-team.jpg';
+$page_image = '/assets/images/og-team.jpg';
 
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $page_image = '/Assets/images/og-team.jpg';
 <meta name="description" content="<?= $page_desc ?>">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 

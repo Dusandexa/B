@@ -3,7 +3,7 @@ $page_title = 'Careers - BnB LAW | Join Our Legal Team';
 $page_desc = 'Join BnB LAW - we\'re looking for talented legal professionals passionate about competition law, telecommunications, and commercial practice. Explore career opportunities.';
 $current_lang = 'en';
 $current_page = 'careers';
-$page_image = 'https://yourwebsite.com/Assets/images/og-careers.jpg'; // Optional
+$page_image = 'https://yourwebsite.com/assets/images/og-careers.jpg'; // Optional
 
 include 'includes/head.php';
 include 'includes/header.php';

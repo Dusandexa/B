@@ -3,7 +3,7 @@ $page_title = 'Kontakt - BnB LAW | Profesionalne Pravne Usluge';
 $page_desc = 'Kontaktirajte BnB LAW za profesionalno pravno savetovanje u oblasti konkurencije, telekomunikacija i privrednog prava. Odgovaramo u roku od 1 radnog dana.';
 $current_lang = 'srb';
 $current_page = 'contact';
-$page_image = '/Assets/images/og-contact.jpg';
+$page_image = '/assets/images/og-contact.jpg';
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ $page_image = '/Assets/images/og-contact.jpg';
 
 <!-- Bootstrap 5.3 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
@@ -261,7 +261,7 @@ $page_image = '/Assets/images/og-contact.jpg';
 </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../Assets/js/custom.js"></script>
+<script src="../assets/js/custom.js"></script>
 </body>
 </html>
 

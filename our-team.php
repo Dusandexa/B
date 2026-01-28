@@ -3,7 +3,7 @@ $page_title = 'Our Team - BnB LAW | Expert Legal Professionals';
 $page_desc = 'Meet our dedicated team of legal professionals. Bojana Miljanović and Bojan Vučković bring deep expertise in competition law, telecommunications, and commercial matters.';
 $current_lang = 'en';
 $current_page = 'team';
-$page_image = 'https://yourwebsite.com/Assets/images/og-team.jpg'; // Optional
+$page_image = 'https://yourwebsite.com/assets/images/og-team.jpg'; // Optional
 
 include 'includes/head.php';
 include 'includes/header.php';

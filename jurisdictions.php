@@ -3,7 +3,7 @@ $page_title = 'Jurisdictions - BnB LAW | Southeast Europe Legal Services';
 $page_desc = 'Strategic legal counsel across key markets in Southeast Europe. We serve clients in Serbia, Bosnia and Herzegovina, Montenegro, Croatia and beyond.';
 $current_lang = 'en';
 $current_page = 'jurisdictions';
-$page_image = 'https://yourwebsite.com/Assets/images/og-jurisdictions.jpg'; // Optional
+$page_image = 'https://yourwebsite.com/assets/images/og-jurisdictions.jpg'; // Optional
 
 include 'includes/head.php';
 include 'includes/header.php';
@@ -64,10 +64,10 @@ include 'includes/header.php';
             </div>
 
             <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 py-3">
-              <img src="Assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
-              <img src="Assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
-              <img src="Assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
-              <img src="Assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
+              <img src="assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+              <img src="assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+              <img src="assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+              <img src="assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
             </div>
           </div>
         </div>

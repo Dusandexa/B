@@ -3,7 +3,7 @@ $page_title = 'Karijere - BnB LAW | Pridružite se Našem Pravnom Timu';
 $page_desc = 'Pridružite se BnB LAW - tražimo talentovane pravne profesionalce sa strašću prema pravu konkurencije, telekomunikacija i privrednoj praksi. Istražite prilike za karijeru.';
 $current_lang = 'srb';
 $current_page = 'careers';
-$page_image = '/Assets/images/og-careers.jpg';
+$page_image = '/assets/images/og-careers.jpg';
 ?>
 <!DOCTYPE html>
 <html lang="srb">
@@ -20,7 +20,7 @@ $page_image = '/Assets/images/og-careers.jpg';
 <!-- Bootstrap 5.3 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <!-- Custom styles -->
-<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
@@ -283,7 +283,7 @@ $page_image = '/Assets/images/og-careers.jpg';
 
   <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../Assets/js/custom.js"></script>
+  <script src="../assets/js/custom.js"></script>
 
 </body>
 </html>

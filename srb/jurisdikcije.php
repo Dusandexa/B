@@ -3,7 +3,7 @@ $page_title = 'Jurisdikcije - BnB LAW | Pravne Usluge u Jugoistočnoj Evropi';
 $page_desc = 'Strateško pravno savetovanje širom ključnih tržišta Jugoistočne Evrope. Pružamo usluge klijentima u Srbiji, Bosni i Hercegovini, Crnoj Gori, Hrvatskoj i šire.';
 $current_lang = 'srb';
 $current_page = 'jurisdictions';
-$page_image = '/Assets/images/og-jurisdictions.jpg';
+$page_image = '/assets/images/og-jurisdictions.jpg';
 
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $page_image = '/Assets/images/og-jurisdictions.jpg';
 <meta name="description" content="<?= $page_desc ?>">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
@@ -107,10 +107,10 @@ $page_image = '/Assets/images/og-jurisdictions.jpg';
             </div>
 
             <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 py-3">
-              <img src="../Assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
-              <img src="../Assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
-              <img src="../Assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
-              <img src="../Assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
+              <img src="../assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+              <img src="../assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+              <img src="../assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+              <img src="../assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ $page_image = '/Assets/images/og-jurisdictions.jpg';
 </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/Assets/js/custom.js"></script>
+<script src="/assets/js/custom.js"></script>
 </body>
 </html>
 

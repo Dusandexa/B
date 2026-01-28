@@ -3,7 +3,7 @@ $page_title = 'News & Insights - BnB LAW | Legal Expertise Articles';
 $page_desc = 'Latest insights, trends, and articles on competition law, telecommunications regulations, commercial contracts, and legal developments across Southeast Europe.';
 $current_lang = 'en';
 $current_page = 'news';
-$page_image = 'https://yourwebsite.com/Assets/images/og-news.jpg'; // Optional
+$page_image = 'https://yourwebsite.com/assets/images/og-news.jpg'; // Optional
 
 include 'includes/head.php';
 include 'includes/header.php';
