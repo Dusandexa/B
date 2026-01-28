@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </style>
 </head>
 <body>
-  <form class="card" method="post" action="">
+  <form class="card" method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>">
     <h1>Private Preview</h1>
     <p class="muted">Login to view the in-progress site.</p>
 
