@@ -14,8 +14,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [L,R=301]
 
-# Remove .php extension if it exists in URL
+# Remove .php extension if it exists in URL (except for login.php and logout.php)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteCond %{REQUEST_URI} !^/login\.php$ [NC]
+RewriteCond %{REQUEST_URI} !^/logout\.php$ [NC]
 RewriteRule ^ %1 [R=301,L]
 
 # Route requests to PHP files (English pages)
