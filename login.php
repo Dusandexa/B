@@ -26,23 +26,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $p = (string)($_POST['password'] ?? '');
   $nextPost = (string)($_POST['next'] ?? '/');
 
-  // Debug output
-  error_log("Login attempt - Username: $u, Password length: " . strlen($p));
-  error_log("User exists: " . (isset($USERS[$u]) ? 'yes' : 'no'));
+  // Visible debug
+  echo "<pre style='color:white;background:red;padding:20px;position:fixed;top:0;left:0;z-index:9999'>";
+  echo "POST received\n";
+  echo "Username: $u\n";
+  echo "Password length: " . strlen($p) . "\n";
+  echo "User exists: " . (isset($USERS[$u]) ? 'YES' : 'NO') . "\n";
+  
+  if (isset($USERS[$u])) {
+    echo "Expected password: " . $USERS[$u] . "\n";
+    echo "Received password: $p\n";
+    echo "Passwords match: " . ($USERS[$u] === $p ? 'YES' : 'NO') . "\n";
+  }
   
   if (isset($USERS[$u]) && hash_equals($USERS[$u], $p)) {
+    echo "LOGIN SUCCESS - Setting session...\n";
     session_regenerate_id(true);
     $_SESSION['preview_logged_in'] = true;
     $_SESSION['preview_user'] = $u;
-
-    error_log("Login successful for: $u");
+    echo "Session set: " . print_r($_SESSION, true) . "\n";
+    echo "Redirecting to: $nextPost\n";
+    echo "</pre>";
+    sleep(3); // Give time to see the debug
     
     if ($nextPost === '' || str_starts_with($nextPost, 'http')) $nextPost = '/';
     header('Location: ' . $nextPost);
     exit;
   }
-
-  error_log("Login failed - wrong credentials");
+  
+  echo "LOGIN FAILED\n";
+  echo "</pre>";
+  
   $error = 'Wrong username or password.';
   $next = $nextPost;
 }
