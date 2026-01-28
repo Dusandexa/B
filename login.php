@@ -1,5 +1,7 @@
 <?php
 declare(strict_types=1);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 // Start session only if not already started
 if (session_status() === PHP_SESSION_NONE) {
@@ -24,16 +26,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $p = (string)($_POST['password'] ?? '');
   $nextPost = (string)($_POST['next'] ?? '/');
 
+  // Debug output
+  error_log("Login attempt - Username: $u, Password length: " . strlen($p));
+  error_log("User exists: " . (isset($USERS[$u]) ? 'yes' : 'no'));
+  
   if (isset($USERS[$u]) && hash_equals($USERS[$u], $p)) {
     session_regenerate_id(true);
     $_SESSION['preview_logged_in'] = true;
     $_SESSION['preview_user'] = $u;
 
+    error_log("Login successful for: $u");
+    
     if ($nextPost === '' || str_starts_with($nextPost, 'http')) $nextPost = '/';
     header('Location: ' . $nextPost);
     exit;
   }
 
+  error_log("Login failed - wrong credentials");
   $error = 'Wrong username or password.';
   $next = $nextPost;
 }
