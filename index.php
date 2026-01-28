@@ -8,7 +8,7 @@ $page_title = 'BnB LAW - Bojan Vučković & Bojana Miljanović';
 $page_desc = 'With over 10 years of specialised legal experience, we deliver precise, strategic counsel designed to protect your interests and strengthen your position.';
 $current_lang = 'en';
 $current_page = 'home';
-$page_image = '/Assets/images/og-home.jpg';
+$page_image = '/assets/images/og-home.jpg';
 
 // Include head (DOCTYPE, meta tags, hreflang)
 include 'includes/head.php';
@@ -17,7 +17,7 @@ include 'includes/head.php';
 <!-- Bootstrap 5.3 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <!-- Custom styles -->
-<link rel="stylesheet" href="Assets/css/custom.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
 </head>
 

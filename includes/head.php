@@ -17,7 +17,7 @@ $page_title = $page_title ?? 'Default Title';
 $page_desc = $page_desc ?? 'Default description';
 $current_lang = $current_lang ?? 'en';
 $current_page = $current_page ?? 'home';
-$page_image = $page_image ?? '/Assets/images/og-default.jpg'; // Default social sharing image
+$page_image = $page_image ?? '/assets/images/og-default.jpg'; // Default social sharing image
 
 // Base URL - IMPORTANT: Change this to your actual domain
 $base_url = 'https://yourwebsite.com';
@@ -113,7 +113,7 @@ $sr_url = $base_url . ($url_map[$current_page]['srb'] ?? '/srb/');
     <meta name="twitter:image" content="<?= htmlspecialchars($page_image_full) ?>">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/Assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -122,5 +122,5 @@ $sr_url = $base_url . ($url_map[$current_page]['srb'] ?? '/srb/');
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/Assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
 </head>

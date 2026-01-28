@@ -1,10 +1,5 @@
 <?php
 declare(strict_types=1);
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-// TEST - show this immediately
-echo "<div style='position:fixed;top:0;left:0;background:yellow;color:black;padding:10px;z-index:99999'>LOGIN.PHP LOADED - Method: " . $_SERVER['REQUEST_METHOD'] . "</div>";
 
 // Start session only if not already started
 if (session_status() === PHP_SESSION_NONE) {
@@ -29,37 +24,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $p = (string)($_POST['password'] ?? '');
   $nextPost = (string)($_POST['next'] ?? '/');
 
-  // Visible debug
-  echo "<pre style='color:white;background:red;padding:20px;position:fixed;top:0;left:0;z-index:9999'>";
-  echo "POST received\n";
-  echo "Username: $u\n";
-  echo "Password length: " . strlen($p) . "\n";
-  echo "User exists: " . (isset($USERS[$u]) ? 'YES' : 'NO') . "\n";
-  
-  if (isset($USERS[$u])) {
-    echo "Expected password: " . $USERS[$u] . "\n";
-    echo "Received password: $p\n";
-    echo "Passwords match: " . ($USERS[$u] === $p ? 'YES' : 'NO') . "\n";
-  }
-  
   if (isset($USERS[$u]) && hash_equals($USERS[$u], $p)) {
-    echo "LOGIN SUCCESS - Setting session...\n";
     session_regenerate_id(true);
     $_SESSION['preview_logged_in'] = true;
     $_SESSION['preview_user'] = $u;
-    echo "Session set: " . print_r($_SESSION, true) . "\n";
-    echo "Redirecting to: $nextPost\n";
-    echo "</pre>";
-    sleep(3); // Give time to see the debug
-    
+
     if ($nextPost === '' || str_starts_with($nextPost, 'http')) $nextPost = '/';
     header('Location: ' . $nextPost);
     exit;
   }
-  
-  echo "LOGIN FAILED\n";
-  echo "</pre>";
-  
+
   $error = 'Wrong username or password.';
   $next = $nextPost;
 }
@@ -81,14 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     button{width:100%;padding:11px 12px;border-radius:10px;border:0;background:#6c5ce7;color:#fff;font-weight:700;cursor:pointer}
     .err{margin:0 0 12px;color:#ff6b6b;font-size:13px}
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const form = document.querySelector('form');
-      form.addEventListener('submit', function(e) {
-        alert('Form submitting! Method: ' + form.method + ', Action: ' + form.action);
-      });
-    });
-  </script>
 </head>
 <body>
   <form class="card" method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>">
