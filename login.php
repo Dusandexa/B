@@ -81,6 +81,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     button{width:100%;padding:11px 12px;border-radius:10px;border:0;background:#6c5ce7;color:#fff;font-weight:700;cursor:pointer}
     .err{margin:0 0 12px;color:#ff6b6b;font-size:13px}
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+      form.addEventListener('submit', function(e) {
+        alert('Form submitting! Method: ' + form.method + ', Action: ' + form.action);
+      });
+    });
+  </script>
 </head>
 <body>
   <form class="card" method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>">
