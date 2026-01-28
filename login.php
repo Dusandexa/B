@@ -3,6 +3,9 @@ declare(strict_types=1);
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+// TEST - show this immediately
+echo "<div style='position:fixed;top:0;left:0;background:yellow;color:black;padding:10px;z-index:99999'>LOGIN.PHP LOADED - Method: " . $_SERVER['REQUEST_METHOD'] . "</div>";
+
 // Start session only if not already started
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
