@@ -1,13 +1,13 @@
 <?php
 $page_title = 'Vesti i Analize - BnB LAW | Članci o Pravnoj Ekspertizi';
 $page_desc = 'Najnovije analize, trendovi i članci o pravu konkurencije, telekomunikacionim propisima, privrednim ugovorima i pravnim dešavanjima širom Jugoistočne Evrope.';
-$current_lang = 'sr';
+$current_lang = 'srb';
 $current_page = 'news';
 $page_image = '/Assets/images/og-news.jpg';
 
 ?>
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="srb">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,29 +23,29 @@ $page_image = '/Assets/images/og-news.jpg';
 <div class="site-wrapper">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
 <div class="container hero-container">
-<a class="navbar-brand d-flex flex-column pl-20" href="/sr/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand d-flex flex-column pl-20" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
 <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
 <span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
 </button>
 <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
 <ul class="navbar-nav align-items-lg-center me-lg-3">
-<li class="nav-item"><a class="nav-link" href="/sr/">Početna</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/sr/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/sr/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
+<li class="nav-item"><a class="nav-link" href="/srb/">Početna</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
 </li>
-<li class="nav-item"><a class="nav-link" href="/sr/jurisdikcije">Regioni</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/sr/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/sr/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/sr/karijere">Karijere</a></li></ul>
+<li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
 </li>
-<li class="nav-item"><a class="nav-link active" href="/sr/vesti">Vesti</a></li>
-<li class="nav-item"><a class="nav-link" href="/sr/kontakt">Kontaktirajte nas</a></li>
+<li class="nav-item"><a class="nav-link active" href="/srb/vesti">Vesti</a></li>
+<li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>
 </ul>
 <button class="btn btn-white-cut mt-3 mt-lg-0">Pozovite +3811182145</button>
 <div class="lang-switcher">
 <button class="lang-toggle"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" /><span class="lang-arrow"></span></button>
 <div class="lang-dropdown">
 <a href="/news" class="lang-option"><img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />English</a>
-<a href="/sr/vesti" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
+<a href="/srb/vesti" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
 </div>
 </div>
 </div>
@@ -79,7 +79,7 @@ $page_image = '/Assets/images/og-news.jpg';
 
           <!-- Card 1 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <a class="news-card" href="/sr/vest">
+            <a class="news-card" href="/srb/vest">
               <div class="news-card-media">
                 <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="News cover" />
               </div>
@@ -97,7 +97,7 @@ $page_image = '/Assets/images/og-news.jpg';
 
           <!-- Card 2 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <a class="news-card" href="/sr/vest">
+            <a class="news-card" href="/srb/vest">
               <div class="news-card-media">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News cover" />
               </div>
@@ -115,7 +115,7 @@ $page_image = '/Assets/images/og-news.jpg';
 
           <!-- Card 3 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <a class="news-card" href="/sr/vest">
+            <a class="news-card" href="/srb/vest">
               <div class="news-card-media">
                 <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?q=80&w=1200&auto=format&fit=crop" alt="News cover" />
               </div>
@@ -133,7 +133,7 @@ $page_image = '/Assets/images/og-news.jpg';
 
           <!-- Card 4 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <a class="news-card" href="/sr/vest">
+            <a class="news-card" href="/srb/vest">
               <div class="news-card-media">
                 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="News cover" />
               </div>
@@ -151,7 +151,7 @@ $page_image = '/Assets/images/og-news.jpg';
 
           <!-- Card 5 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <a class="news-card" href="/sr/vest">
+            <a class="news-card" href="/srb/vest">
               <div class="news-card-media">
                 <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop" alt="News cover" />
               </div>
@@ -169,7 +169,7 @@ $page_image = '/Assets/images/og-news.jpg';
 
           <!-- Card 6 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <a class="news-card" href="/sr/vest">
+            <a class="news-card" href="/srb/vest">
               <div class="news-card-media">
                 <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News cover" />
               </div>
@@ -193,17 +193,17 @@ $page_image = '/Assets/images/og-news.jpg';
 <div class="container hero-container footer-container">
 <div class="row align-items-start footer-main-row">
 <div class="col-12 col-lg-8">
-<a class="navbar-brand d-flex flex-column" href="/sr/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand d-flex flex-column" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
 <br><br>
 <p class="footer-mission mb-4">Naša misija je da pružimo jasne, strateške pravne savete koji štite vaše interese, smanjuju složenost i omogućavaju vam da se fokusirate na ono što je najvažnije.</p>
 <nav class="footer-nav d-flex flex-wrap gap-4">
-<a href="/sr/" class="footer-nav-link">Početna</a>
-<a href="/sr/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
-<a href="/sr/jurisdikcije" class="footer-nav-link">Regioni</a>
-<a href="/sr/nas-tim" class="footer-nav-link">Naš Tim</a>
-<a href="/sr/karijere" class="footer-nav-link">Karijere</a>
-<a href="/sr/vesti" class="footer-nav-link">Vesti</a>
-<a href="/sr/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>
+<a href="/srb/" class="footer-nav-link">Početna</a>
+<a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
+<a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
+<a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+<a href="/srb/karijere" class="footer-nav-link">Karijere</a>
+<a href="/srb/vesti" class="footer-nav-link">Vesti</a>
+<a href="/srb/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>
 </nav>
 </div>
 <div class="col-12 col-lg-4 mt-4 mt-lg-0">

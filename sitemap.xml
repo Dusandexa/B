@@ -6,16 +6,16 @@
     <url>
         <loc>https://yourwebsite.com/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/</loc>
+        <loc>https://yourwebsite.com/srb/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -25,16 +25,16 @@
     <url>
         <loc>https://yourwebsite.com/contact</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/contact"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/kontakt"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/kontakt</loc>
+        <loc>https://yourwebsite.com/srb/kontakt</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/contact"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/kontakt"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -44,16 +44,16 @@
     <url>
         <loc>https://yourwebsite.com/about</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/about"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/o-nama"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/o-nama"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/o-nama</loc>
+        <loc>https://yourwebsite.com/srb/o-nama</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/about"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/o-nama"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/o-nama"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -63,16 +63,16 @@
     <url>
         <loc>https://yourwebsite.com/our-team</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/our-team"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/nas-tim"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/nas-tim"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/nas-tim</loc>
+        <loc>https://yourwebsite.com/srb/nas-tim</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/our-team"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/nas-tim"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/nas-tim"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -82,16 +82,16 @@
     <url>
         <loc>https://yourwebsite.com/legal-fields</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/legal-fields"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/pravne-oblasti"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/pravne-oblasti"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/pravne-oblasti</loc>
+        <loc>https://yourwebsite.com/srb/pravne-oblasti</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/legal-fields"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/pravne-oblasti"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/pravne-oblasti"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -101,16 +101,16 @@
     <url>
         <loc>https://yourwebsite.com/jurisdictions</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/jurisdictions"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/jurisdikcije"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/jurisdikcije"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/jurisdikcije</loc>
+        <loc>https://yourwebsite.com/srb/jurisdikcije</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/jurisdictions"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/jurisdikcije"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/jurisdikcije"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -120,16 +120,16 @@
     <url>
         <loc>https://yourwebsite.com/careers</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/careers"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/karijere"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/karijere"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/karijere</loc>
+        <loc>https://yourwebsite.com/srb/karijere</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/careers"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/karijere"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/karijere"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -139,16 +139,16 @@
     <url>
         <loc>https://yourwebsite.com/news</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/news"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/vesti"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/vesti"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/sr/vesti</loc>
+        <loc>https://yourwebsite.com/srb/vesti</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/news"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/vesti"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/vesti"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>

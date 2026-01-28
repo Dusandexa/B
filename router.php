@@ -28,15 +28,15 @@ $routes = [
     '/news-single' => 'news-single.php',
     
     // Serbian routes
-    '/sr' => 'sr/index.php',
-    '/sr/' => 'sr/index.php',
-    '/sr/kontakt' => 'sr/kontakt.php',
-    '/sr/pravne-oblasti' => 'sr/pravne-oblasti.php',
-    '/sr/nas-tim' => 'sr/nas-tim.php',
-    '/sr/karijere' => 'sr/karijere.php',
-    '/sr/jurisdikcije' => 'sr/jurisdikcije.php',
-    '/sr/vesti' => 'sr/vesti.php',
-    '/sr/vest' => 'sr/vest.php',
+    '/srb' => 'srb/index.php',
+    '/srb/' => 'srb/index.php',
+    '/srb/kontakt' => 'srb/kontakt.php',
+    '/srb/pravne-oblasti' => 'srb/pravne-oblasti.php',
+    '/srb/nas-tim' => 'srb/nas-tim.php',
+    '/srb/karijere' => 'srb/karijere.php',
+    '/srb/jurisdikcije' => 'srb/jurisdikcije.php',
+    '/srb/vesti' => 'srb/vesti.php',
+    '/srb/vest' => 'srb/vest.php',
 ];
 
 // Check if route exists

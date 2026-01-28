@@ -89,7 +89,7 @@ include 'includes/head.php';
               <span class="lang-arrow"></span>
             </button>
             <div class="lang-dropdown">
-              <a href="/sr/" class="lang-option" data-lang="sr">
+              <a href="/srb/" class="lang-option" data-lang="srb">
                 <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
                 Srpski
               </a>

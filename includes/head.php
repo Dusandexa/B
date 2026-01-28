@@ -5,7 +5,7 @@
  * Required variables:
  * @param string $page_title - The page title
  * @param string $page_desc - The page meta description
- * @param string $current_lang - Language code: 'en' or 'sr'
+ * @param string $current_lang - Language code: 'en' or 'srb'
  * @param string $current_page - Current page identifier for URL mapping (e.g., 'home', 'contact', 'about')
  */
 
@@ -23,39 +23,39 @@ $base_url = 'https://yourwebsite.com';
 $url_map = [
     'home' => [
         'en' => '/',
-        'sr' => '/sr/'
+        'srb' => '/srb/'
     ],
     'contact' => [
         'en' => '/contact',
-        'sr' => '/sr/kontakt'
+        'srb' => '/srb/kontakt'
     ],
     'about' => [
         'en' => '/about',
-        'sr' => '/sr/o-nama'
+        'srb' => '/srb/o-nama'
     ],
     'team' => [
         'en' => '/our-team',
-        'sr' => '/sr/nas-tim'
+        'srb' => '/srb/nas-tim'
     ],
     'legal-fields' => [
         'en' => '/legal-fields',
-        'sr' => '/sr/pravne-oblasti'
+        'srb' => '/srb/pravne-oblasti'
     ],
     'jurisdictions' => [
         'en' => '/jurisdictions',
-        'sr' => '/sr/jurisdikcije'
+        'srb' => '/srb/jurisdikcije'
     ],
     'careers' => [
         'en' => '/careers',
-        'sr' => '/sr/karijere'
+        'srb' => '/srb/karijere'
     ],
     'news' => [
         'en' => '/news',
-        'sr' => '/sr/vesti'
+        'srb' => '/srb/vesti'
     ],
     'news-single' => [
         'en' => '/news-single',
-        'sr' => '/sr/vest'
+        'srb' => '/srb/vest'
     ]
 ];
 
@@ -71,7 +71,7 @@ $page_image_full = (strpos($page_image, 'http') === 0) ? $page_image : $base_url
 
 // Get alternate language URLs for hreflang
 $en_url = $base_url . ($url_map[$current_page]['en'] ?? '/');
-$sr_url = $base_url . ($url_map[$current_page]['sr'] ?? '/sr/');
+$sr_url = $base_url . ($url_map[$current_page]['srb'] ?? '/srb/');
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $current_lang; ?>">
@@ -84,14 +84,14 @@ $sr_url = $base_url . ($url_map[$current_page]['sr'] ?? '/sr/');
     <title><?= htmlspecialchars($page_title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
     <meta name="author" content="Your Company Name">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow, noarchive">
     
     <!-- Canonical URL (Self-referencing) -->
     <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
     
     <!-- Hreflang Tags for Bilingual SEO -->
     <link rel="alternate" hreflang="en" href="<?= htmlspecialchars($en_url) ?>">
-    <link rel="alternate" hreflang="sr" href="<?= htmlspecialchars($sr_url) ?>">
+    <link rel="alternate" hreflang="srb" href="<?= htmlspecialchars($sr_url) ?>">
     <link rel="alternate" hreflang="x-default" href="<?= htmlspecialchars($en_url) ?>">
     
     <!-- Open Graph Meta Tags (for social media) -->
@@ -100,8 +100,8 @@ $sr_url = $base_url . ($url_map[$current_page]['sr'] ?? '/sr/');
     <meta property="og:image" content="<?= htmlspecialchars($page_image_full) ?>">
     <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="<?= $current_lang === 'sr' ? 'sr_RS' : 'en_US' ?>">
-    <meta property="og:locale:alternate" content="<?= $current_lang === 'sr' ? 'en_US' : 'sr_RS' ?>">
+    <meta property="og:locale" content="<?= $current_lang === 'srb' ? 'sr_RS' : 'en_US' ?>">
+    <meta property="og:locale:alternate" content="<?= $current_lang === 'srb' ? 'en_US' : 'sr_RS' ?>">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">

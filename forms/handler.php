@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'error' => 'An error occurred while processing your request. Please try again.',
             'spam_detected' => 'Spam detected. Please try again.'
         ],
-        'sr' => [
+        'srb' => [
             'name_required' => 'Ime je obavezno.',
             'email_required' => 'Email je obavezan.',
             'email_invalid' => 'Molimo unesite validnu email adresu.',
@@ -130,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Redirect back to the contact page
-    $redirect_url = ($lang === 'sr') ? '/sr/kontakt' : '/contact';
+    $redirect_url = ($lang === 'srb') ? '/srb/kontakt' : '/contact';
     header("Location: $redirect_url");
     exit;
     

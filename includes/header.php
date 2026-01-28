@@ -3,7 +3,7 @@
  * Header Include - Contains navigation and language switcher
  * 
  * Required variables:
- * @param string $current_lang - Language code: 'en' or 'sr'
+ * @param string $current_lang - Language code: 'en' or 'srb'
  * @param string $current_page - Current page identifier for URL mapping
  */
 
@@ -13,20 +13,20 @@ $current_page = $current_page ?? 'home';
 
 // URL Mapping for Language Switcher (must match head.php mapping)
 $url_mapping = [
-    'home' => ['en' => '/', 'sr' => '/sr/'],
-    'contact' => ['en' => '/contact', 'sr' => '/sr/kontakt'],
-    'about' => ['en' => '/about', 'sr' => '/sr/o-nama'],
-    'team' => ['en' => '/our-team', 'sr' => '/sr/nas-tim'],
-    'legal-fields' => ['en' => '/legal-fields', 'sr' => '/sr/pravne-oblasti'],
-    'jurisdictions' => ['en' => '/jurisdictions', 'sr' => '/sr/jurisdikcije'],
-    'careers' => ['en' => '/careers', 'sr' => '/sr/karijere'],
-    'news' => ['en' => '/news', 'sr' => '/sr/vesti'],
-    'news-single' => ['en' => '/news-single', 'sr' => '/sr/vest']
+    'home' => ['en' => '/', 'srb' => '/srb/'],
+    'contact' => ['en' => '/contact', 'srb' => '/srb/kontakt'],
+    'about' => ['en' => '/about', 'srb' => '/srb/o-nama'],
+    'team' => ['en' => '/our-team', 'srb' => '/srb/nas-tim'],
+    'legal-fields' => ['en' => '/legal-fields', 'srb' => '/srb/pravne-oblasti'],
+    'jurisdictions' => ['en' => '/jurisdictions', 'srb' => '/srb/jurisdikcije'],
+    'careers' => ['en' => '/careers', 'srb' => '/srb/karijere'],
+    'news' => ['en' => '/news', 'srb' => '/srb/vesti'],
+    'news-single' => ['en' => '/news-single', 'srb' => '/srb/vest']
 ];
 
 // Determine alternate language URL
 if ($current_lang === 'en') {
-    $alt_url = $url_mapping[$current_page]['sr'] ?? '/sr/';
+    $alt_url = $url_mapping[$current_page]['srb'] ?? '/srb/';
 } else {
     $alt_url = $url_mapping[$current_page]['en'] ?? '/';
 }
@@ -36,7 +36,7 @@ if ($current_lang === 'en') {
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
-        <a class="navbar-brand d-flex flex-column pl-20" href="<?= $current_lang === 'sr' ? '/sr/' : '/' ?>">
+        <a class="navbar-brand d-flex flex-column pl-20" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
           <span>BnB LAW</span>
           <small class="navbar-brand-subtext">
             Bojan Vučković & Bojana Miljanović
@@ -94,38 +94,38 @@ if ($current_lang === 'en') {
             </li>
             <?php else: ?>
             <li class="nav-item">
-              <a class="nav-link<?= $current_page === 'home' ? ' active' : '' ?>" href="/sr/">Početna</a>
+              <a class="nav-link<?= $current_page === 'home' ? ' active' : '' ?>" href="/srb/">Početna</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/sr/pravne-oblasti" id="moreLinksDropdown"
+              <a class="nav-link dropdown-toggle<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/srb/pravne-oblasti" id="moreLinksDropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pravne Oblasti
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
-                <li class="d-lg-none"><a class="dropdown-item" href="/sr/pravne-oblasti">Sve Pravne Oblasti</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
                 <li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li>
                 <li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li>
                 <li><a class="dropdown-item" href="#">Privredno Pravo</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link<?= $current_page === 'jurisdictions' ? ' active' : '' ?>" href="/sr/jurisdikcije">Regioni</a>
+              <a class="nav-link<?= $current_page === 'jurisdictions' ? ' active' : '' ?>" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/sr/nas-tim" id="teamDropdown"
+              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-tim" id="teamDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/sr/nas-tim">Upoznajte Tim</a></li>
-                <li><a class="dropdown-item" href="/sr/karijere">Karijere</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li>
+                <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link<?= $current_page === 'news' ? ' active' : '' ?>" href="/sr/vesti">Vesti</a>
+              <a class="nav-link<?= $current_page === 'news' ? ' active' : '' ?>" href="/srb/vesti">Vesti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link<?= $current_page === 'contact' ? ' active' : '' ?>" href="/sr/kontakt">Kontaktirajte nas danas</a>
+              <a class="nav-link<?= $current_page === 'contact' ? ' active' : '' ?>" href="/srb/kontakt">Kontaktirajte nas danas</a>
             </li>
             <?php endif; ?>
           </ul>
@@ -139,7 +139,7 @@ if ($current_lang === 'en') {
               <span class="lang-arrow"></span>
             </button>
             <div class="lang-dropdown">
-              <a href="<?= $alt_url ?>" class="lang-option<?= $current_lang === 'sr' ? ' active' : '' ?>" data-lang="sr">
+              <a href="<?= $alt_url ?>" class="lang-option<?= $current_lang === 'srb' ? ' active' : '' ?>" data-lang="srb">
                 <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
                 Srpski
               </a>

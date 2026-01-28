@@ -56,7 +56,7 @@ define('FORM_FROM_NAME', 'Contact Form');
 // ============================================
 
 // Available languages
-$available_languages = ['en', 'sr'];
+$available_languages = ['en', 'srb'];
 
 // Default language
 define('DEFAULT_LANG', 'en');
@@ -70,39 +70,39 @@ define('DEFAULT_LANG', 'en');
 $GLOBALS['url_mapping'] = [
     'home' => [
         'en' => '/',
-        'sr' => '/sr/'
+        'srb' => '/srb/'
     ],
     'contact' => [
         'en' => '/contact',
-        'sr' => '/sr/kontakt'
+        'srb' => '/srb/kontakt'
     ],
     'about' => [
         'en' => '/about',
-        'sr' => '/sr/o-nama'
+        'srb' => '/srb/o-nama'
     ],
     'team' => [
         'en' => '/our-team',
-        'sr' => '/sr/nas-tim'
+        'srb' => '/srb/nas-tim'
     ],
     'legal-fields' => [
         'en' => '/legal-fields',
-        'sr' => '/sr/pravne-oblasti'
+        'srb' => '/srb/pravne-oblasti'
     ],
     'jurisdictions' => [
         'en' => '/jurisdictions',
-        'sr' => '/sr/jurisdikcije'
+        'srb' => '/srb/jurisdikcije'
     ],
     'careers' => [
         'en' => '/careers',
-        'sr' => '/sr/karijere'
+        'srb' => '/srb/karijere'
     ],
     'news' => [
         'en' => '/news',
-        'sr' => '/sr/vesti'
+        'srb' => '/srb/vesti'
     ],
     'news-single' => [
         'en' => '/news-single',
-        'sr' => '/sr/vest'
+        'srb' => '/srb/vest'
     ]
 ];
 
@@ -121,15 +121,15 @@ $GLOBALS['nav_items'] = [
         ['url' => '/news', 'text' => 'News', 'page' => 'news'],
         ['url' => '/contact', 'text' => 'Contact', 'page' => 'contact']
     ],
-    'sr' => [
-        ['url' => '/sr/', 'text' => 'Početna', 'page' => 'home'],
-        ['url' => '/sr/o-nama', 'text' => 'O Nama', 'page' => 'about'],
-        ['url' => '/sr/nas-tim', 'text' => 'Naš Tim', 'page' => 'team'],
-        ['url' => '/sr/pravne-oblasti', 'text' => 'Pravne Oblasti', 'page' => 'legal-fields'],
-        ['url' => '/sr/jurisdikcije', 'text' => 'Jurisdikcije', 'page' => 'jurisdictions'],
-        ['url' => '/sr/karijere', 'text' => 'Karijere', 'page' => 'careers'],
-        ['url' => '/sr/vesti', 'text' => 'Vesti', 'page' => 'news'],
-        ['url' => '/sr/kontakt', 'text' => 'Kontakt', 'page' => 'contact']
+    'srb' => [
+        ['url' => '/srb/', 'text' => 'Početna', 'page' => 'home'],
+        ['url' => '/srb/o-nama', 'text' => 'O Nama', 'page' => 'about'],
+        ['url' => '/srb/nas-tim', 'text' => 'Naš Tim', 'page' => 'team'],
+        ['url' => '/srb/pravne-oblasti', 'text' => 'Pravne Oblasti', 'page' => 'legal-fields'],
+        ['url' => '/srb/jurisdikcije', 'text' => 'Jurisdikcije', 'page' => 'jurisdictions'],
+        ['url' => '/srb/karijere', 'text' => 'Karijere', 'page' => 'careers'],
+        ['url' => '/srb/vesti', 'text' => 'Vesti', 'page' => 'news'],
+        ['url' => '/srb/kontakt', 'text' => 'Kontakt', 'page' => 'contact']
     ]
 ];
 
@@ -141,7 +141,7 @@ $GLOBALS['nav_items'] = [
  * Get URL mapping for a specific page
  */
 function get_page_urls($page_id) {
-    return $GLOBALS['url_mapping'][$page_id] ?? ['en' => '/', 'sr' => '/sr/'];
+    return $GLOBALS['url_mapping'][$page_id] ?? ['en' => '/', 'srb' => '/srb/'];
 }
 
 /**
@@ -149,8 +149,8 @@ function get_page_urls($page_id) {
  */
 function get_alternate_url($current_page, $current_lang) {
     $urls = get_page_urls($current_page);
-    $alt_lang = ($current_lang === 'en') ? 'sr' : 'en';
-    return $urls[$alt_lang] ?? ($alt_lang === 'sr' ? '/sr/' : '/');
+    $alt_lang = ($current_lang === 'en') ? 'srb' : 'en';
+    return $urls[$alt_lang] ?? ($alt_lang === 'srb' ? '/srb/' : '/');
 }
 
 /**

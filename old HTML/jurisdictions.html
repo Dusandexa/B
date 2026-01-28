@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Careers | BnB Law</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Jurisdictions | BnB Law</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -15,7 +16,7 @@
   <link rel="stylesheet" href="Assets/css/custom.css" />
 </head>
 
-<body class="bnb-page contact-page">
+<body class="bnb-page jurisdictions-page">
   <div class="main-wrapper">
 
     <!-- NAVBAR -->
@@ -57,15 +58,13 @@
                 <li><a class="dropdown-item" href="#">Commercial Law</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="jurisdictions.html">Regions</a></li>
+            <li class="nav-item"><a class="nav-link active" href="jurisdictions.html">Regions</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="our-team.html" id="teamDropdown"
-                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Our Team
-              </a>
+              <a class="nav-link dropdown-toggle" href="our-team.html" id="teamDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Team</a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
                 <li class="d-lg-none"><a class="dropdown-item" href="our-team.html">Meet the Team</a></li>
-                <li><a class="dropdown-item active" href="careers.html">Careers</a></li>
+                <li><a class="dropdown-item" href="careers.html">Careers</a></li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="News.html">News</a></li>
@@ -97,104 +96,65 @@
       </div>
     </nav>
 
-    <!-- CAREERS INTRO -->
+    <!-- JURISDICTIONS INTRO -->
     <section class="about-section">
       <div class="container hero-container">
         <div class="row">
           <div class="col-12 col-lg-8">
             <div class="about-label d-flex align-items-center mb-3">
               <span class="about-label-dot me-2"></span>
-              <span class="about-label-text">Careers</span>
+              <span class="about-label-text">Our Regional Presence</span>
             </div>
 
             <h1 class="contact-title mb-0">
-              Join our team.
+              Strategic counsel across key markets in Southeast Europe and beyond.
             </h1>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CAREERS FORM SECTION -->
-    <section class="contact-section pt-0">
+    <!-- JURISDICTIONS LIST & CLIENTS -->
+    <section class="value-steps-section py-5" style="background-color: #ffffff; color: #000000;">
       <div class="container hero-container">
-        <div class="row g-4 align-items-stretch">
-          <!-- LEFT: intro text -->
-          <div class="col-12 col-lg-5">
-            <div class="contact-left">
-              <p class="contact-lead mb-4">
-                We're always looking for talented legal professionals who share our commitment to excellence, precision, and client service.
-              </p>
-              <p class="contact-lead mb-4">
-                If you're passionate about competition law, telecommunications, or commercial practice, we'd love to hear from you.
-              </p>
+        <div class="row">
+          <!-- Left column: Countries -->
+          <div class="col-12 col-lg-6">
+            <div class="vs-steps mb-5" style="margin-top: 0;">
+
+              <div class="vs-step">
+                <span>Serbia</span>
+                <div class="vs-line"></div>
+              </div>
+
+              <div class="vs-step">
+                <span>Bosnia and Herzegovina</span>
+                <div class="vs-line"></div>
+              </div>
+
+              <div class="vs-step">
+                <span>Montenegro</span>
+                <div class="vs-line"></div>
+              </div>
+
+              <div class="vs-step">
+                <span>Croatia</span>
+                <div class="vs-line"></div>
+              </div>
             </div>
           </div>
 
-          <!-- RIGHT: form -->
-          <div class="col-12 col-lg-7">
-            <div class="contact-form-wrap">
-              <form id="careerForm" class="contact-form" action="#" method="post" enctype="multipart/form-data">
-                <div class="row g-3">
+          <!-- Right column: Trusted by -->
+          <div class="col-12 col-lg-6">
+            <div class="text-center text-lg-start">
+              <p class="clients-title mb-4" style="color: #133034;">Trusted by 500+ clients</p>
+            </div>
 
-                  <div class="col-12 col-md-6">
-                    <label class="contact-label" for="careerName">Full name</label>
-                    <input class="contact-input" id="careerName" name="name" type="text" placeholder="Your name" />
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <label class="contact-label" for="careerEmail">Email</label>
-                    <input class="contact-input" id="careerEmail" name="email" type="email" placeholder="you@email.com" />
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <label class="contact-label" for="careerPhone">Phone number</label>
-                    <input class="contact-input" id="careerPhone" name="phone" type="tel" placeholder="+381 11..." />
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <label class="contact-label" for="careerPosition">Position of interest</label>
-                    <select class="contact-input" id="careerPosition" name="position">
-                      <option value="">Select a position...</option>
-                      <option value="Associate Attorney">Associate Attorney</option>
-                      <option value="Senior Associate">Senior Associate</option>
-                      <option value="Legal Counsel">Legal Counsel</option>
-                      <option value="Junior Lawyer">Junior Lawyer</option>
-                      <option value="Paralegal">Paralegal</option>
-                      <option value="Legal Assistant">Legal Assistant</option>
-                      <option value="Internship">Internship</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-
-                  <div class="col-12">
-                    <label class="contact-label" for="careerMsg">Cover letter / Message</label>
-                    <textarea class="contact-textarea" id="careerMsg" name="message" rows="5"
-                      placeholder="Tell us about yourself and why you'd like to join our team..."></textarea>
-                  </div>
-
-                  <div class="col-12">
-                    <label class="contact-label" for="careerCV">CV / Resume (PDF, DOC, DOCX)</label>
-                    <input class="contact-input" id="careerCV" name="cv" type="file" accept=".pdf,.doc,.docx" />
-                  </div>
-
-                  <!-- reCAPTCHA -->
-                  <div class="col-12">
-                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="recaptchaCallbackCareer"></div>
-                    <div class="captcha-error-career small mt-2" style="display:none;"></div>
-                  </div>
-
-                  <div class="col-12 d-flex justify-content-end">
-                    <button type="submit" class="btn-black-cut">
-                      Submit application
-                      <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="currentColor">
-                        <path d="M120-120v-720l760 360-760 360Zm80-126 474-234-474-234v168l240 66-240 66v168Z" />
-                      </svg>
-                    </button>
-                  </div>
-
-                </div>
-              </form>
+            <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 py-3">
+              <img src="Assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+              <img src="Assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+              <img src="Assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+              <img src="Assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
             </div>
           </div>
         </div>
@@ -279,18 +239,6 @@
 
   <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-  <!-- jQuery Validation plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-
-  <!-- Custom JS -->
   <script src="Assets/js/custom.js"></script>
-
-  <!-- Google reCAPTCHA -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 </body>
 </html>

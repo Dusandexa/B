@@ -7,20 +7,20 @@
 // Page-specific variables for SEO
 $page_title = 'BnB LAW - Bojan Vučković & Bojana Miljanović';
 $page_desc = 'Sa preko 10 godina specijalizovanog pravnog iskustva, pružamo precizne, strateške savete osmišljene da zaštite vaše interese i ojačaju vašu poziciju.';
-$current_lang = 'sr';
+$current_lang = 'srb';
 $current_page = 'home';
 $page_image = '/Assets/images/og-home.jpg';
 ?>
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="srb">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= $page_title ?></title>
 <meta name="description" content="<?= $page_desc ?>">
-<link rel="canonical" href="https://yourwebsite.com/sr/">
+<link rel="canonical" href="https://yourwebsite.com/srb/">
 <link rel="alternate" hreflang="en" href="https://yourwebsite.com/">
-<link rel="alternate" hreflang="sr" href="https://yourwebsite.com/sr/">
+<link rel="alternate" hreflang="srb" href="https://yourwebsite.com/srb/">
 <link rel="alternate" hreflang="x-default" href="https://yourwebsite.com/">
 
 <!-- Bootstrap 5.3 CSS -->
@@ -35,7 +35,7 @@ $page_image = '/Assets/images/og-home.jpg';
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
-        <a class="navbar-brand d-flex flex-column pl-20" href="/sr/">
+        <a class="navbar-brand d-flex flex-column pl-20" href="/srb/">
           <span>BnB LAW</span>
           <small class="navbar-brand-subtext">
             Bojan Vučković & Bojana Miljanović
@@ -56,36 +56,36 @@ $page_image = '/Assets/images/og-home.jpg';
         <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
           <ul class="navbar-nav align-items-lg-center me-lg-3">
             <li class="nav-item">
-              <a class="nav-link active" href="/sr/">Početna</a>
+              <a class="nav-link active" href="/srb/">Početna</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/sr/pravne-oblasti" id="moreLinksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/srb/pravne-oblasti" id="moreLinksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pravne Oblasti
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
-                <li class="d-lg-none"><a class="dropdown-item" href="/sr/pravne-oblasti">Sve Pravne Oblasti</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
                 <li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li>
                 <li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li>
                 <li><a class="dropdown-item" href="#">Privredno Pravo</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sr/jurisdikcije">Regioni</a>
+              <a class="nav-link" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/sr/nas-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/srb/nas-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/sr/nas-tim">Upoznajte Tim</a></li>
-                <li><a class="dropdown-item" href="/sr/karijere">Karijere</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li>
+                <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sr/vesti">Vesti</a>
+              <a class="nav-link" href="/srb/vesti">Vesti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sr/kontakt">Kontaktirajte nas</a>
+              <a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a>
             </li>
           </ul>
 
@@ -102,7 +102,7 @@ $page_image = '/Assets/images/og-home.jpg';
                 <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />
                 English
               </a>
-              <a href="/sr/" class="lang-option active" data-lang="sr">
+              <a href="/srb/" class="lang-option active" data-lang="srb">
                 <img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />
                 Srpski
               </a>
@@ -300,7 +300,7 @@ $page_image = '/Assets/images/og-home.jpg';
   <div class="container hero-container footer-container">
     <div class="row align-items-start footer-main-row">
       <div class="col-12 col-lg-8">
-        <a class="navbar-brand d-flex flex-column" href="/sr/">
+        <a class="navbar-brand d-flex flex-column" href="/srb/">
           <span>BnB LAW</span>
           <small class="navbar-brand-subtext">
             Bojan Vučković & Bojana Miljanović
@@ -313,13 +313,13 @@ $page_image = '/Assets/images/og-home.jpg';
         </p>
 
         <nav class="footer-nav d-flex flex-wrap gap-4">
-          <a href="/sr/" class="footer-nav-link">Početna</a>
-          <a href="/sr/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
-          <a href="/sr/jurisdikcije" class="footer-nav-link">Regioni</a>
-          <a href="/sr/nas-tim" class="footer-nav-link">Naš Tim</a>
-          <a href="/sr/karijere" class="footer-nav-link">Karijere</a>
-          <a href="/sr/vesti" class="footer-nav-link">Vesti</a>
-          <a href="/sr/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>
+          <a href="/srb/" class="footer-nav-link">Početna</a>
+          <a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
+          <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
+          <a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+          <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
+          <a href="/srb/vesti" class="footer-nav-link">Vesti</a>
+          <a href="/srb/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>
         </nav>
       </div>
 

@@ -1,13 +1,13 @@
 <?php
 $page_title = 'Naš Tim - BnB LAW | Stručni Pravni Profesionalci';
 $page_desc = 'Upoznajte naš posvećeni tim pravnih profesionalaca. Bojana Miljanović i Bojan Vučković donose duboku ekspertizu u pravu konkurencije, telekomunikacija i privrednim pitanjima.';
-$current_lang = 'sr';
+$current_lang = 'srb';
 $current_page = 'team';
 $page_image = '/Assets/images/og-team.jpg';
 
 ?>
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="srb">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,29 +23,29 @@ $page_image = '/Assets/images/og-team.jpg';
 <div class="site-wrapper">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
 <div class="container hero-container">
-<a class="navbar-brand d-flex flex-column pl-20" href="/sr/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand d-flex flex-column pl-20" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
 <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
 <span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
 </button>
 <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
 <ul class="navbar-nav align-items-lg-center me-lg-3">
-<li class="nav-item"><a class="nav-link" href="/sr/">Početna</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/sr/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/sr/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
+<li class="nav-item"><a class="nav-link" href="/srb/">Početna</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
 </li>
-<li class="nav-item"><a class="nav-link" href="/sr/jurisdikcije">Regioni</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="/sr/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/sr/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/sr/karijere">Karijere</a></li></ul>
+<li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="/srb/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
 </li>
-<li class="nav-item"><a class="nav-link" href="/sr/vesti">Vesti</a></li>
-<li class="nav-item"><a class="nav-link" href="/sr/kontakt">Kontaktirajte nas</a></li>
+<li class="nav-item"><a class="nav-link" href="/srb/vesti">Vesti</a></li>
+<li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>
 </ul>
 <button class="btn btn-white-cut mt-3 mt-lg-0">Pozovite +3811182145</button>
 <div class="lang-switcher">
 <button class="lang-toggle"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" /><span class="lang-arrow"></span></button>
 <div class="lang-dropdown">
 <a href="/our-team" class="lang-option"><img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />English</a>
-<a href="/sr/nas-tim" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
+<a href="/srb/nas-tim" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
 </div>
 </div>
 </div>
@@ -67,7 +67,7 @@ $page_image = '/Assets/images/og-team.jpg';
             </h1>
 
             <p class="team-join-cta mt-3">
-              Zainteresovani ste da se pridružite našem timu? <a href="/sr/karijere" class="team-join-link">Popunite formular <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
+              Zainteresovani ste da se pridružite našem timu? <a href="/srb/karijere" class="team-join-link">Popunite formular <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
             </p>
           </div>
         </div>
