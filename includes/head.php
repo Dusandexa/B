@@ -1,4 +1,7 @@
 <?php
+// Password protection - remove this line when ready to go public
+require __DIR__ . '/../auth.php';
+
 /**
  * Head Include - Contains all meta tags, SEO, and hreflang logic
  * 
