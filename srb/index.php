@@ -1,7 +1,6 @@
 <?php
 /**
  * Home Page (Serbian)
- * Početna stranica
  */
 
 // Page-specific variables for SEO
@@ -10,18 +9,10 @@ $page_desc = 'Sa preko 10 godina specijalizovanog pravnog iskustva, pružamo pre
 $current_lang = 'srb';
 $current_page = 'home';
 $page_image = '/assets/images/og-home.jpg';
+
+// Include head (DOCTYPE, meta tags, hreflang)
+include '../includes/head.php';
 ?>
-<!DOCTYPE html>
-<html lang="srb">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_desc ?>">
-<link rel="canonical" href="https://yourwebsite.com/srb/">
-<link rel="alternate" hreflang="en" href="https://yourwebsite.com/">
-<link rel="alternate" hreflang="srb" href="https://yourwebsite.com/srb/">
-<link rel="alternate" hreflang="x-default" href="https://yourwebsite.com/">
 
 <!-- Bootstrap 5.3 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -35,11 +26,8 @@ $page_image = '/assets/images/og-home.jpg';
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
-        <a class="navbar-brand d-flex flex-column pl-20" href="/srb/">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand pl-20" href="/srb/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 
         <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
@@ -64,20 +52,20 @@ $page_image = '/assets/images/og-home.jpg';
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
                 <li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
-                <li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li>
-                <li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li>
-                <li><a class="dropdown-item" href="#">Privredno Pravo</a></li>
+                <li><a class="dropdown-item" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li>
+                <li><a class="dropdown-item" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li>
+                <li><a class="dropdown-item" href="/srb/privredno-pravo">Privredno Pravo</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/srb/nas-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/srb/nas-pravni-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
                 <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>
@@ -242,7 +230,7 @@ $page_image = '/assets/images/og-home.jpg';
       </div>
     </div>
   <h2 class="vs-title">
-      Donosimo duboko pravno razumevanje da zaštitimo vaše interese u brzim i visoko regulisanim sektorima.
+      Pružamo temeljno pravno razumevanje i podršku u cilju zaštite vaših interesa, u svim pravnim oblastima kojima se bavimo.
     </h2>
 
   </div>
@@ -264,7 +252,7 @@ $page_image = '/assets/images/og-home.jpg';
               "Njen rad je dobro urađen, efikasan i precizan. Ona pruža ono što nam je potrebno kada nam je potrebno."
 - Chambers, Evropa, Srbija, Pravo konkurencije, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/srb/advokat-bojana-miljanovic" class="btn-partner-outline">
               Više o Bojani
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>
@@ -284,7 +272,7 @@ $page_image = '/assets/images/og-home.jpg';
               "On je najbolji advokat za pravo konkurencije u Istočnoj Evropi. Ima izvanredne pravne veštine i pažnju prema detaljima, uz poslovni pristup i način razmišljanja."
 - Chambers, Evropa, Srbija, Pravo konkurencije, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/srb/advokat-bojan-vuckovic" class="btn-partner-outline">
               Više o Bojanu
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>
@@ -300,11 +288,8 @@ $page_image = '/assets/images/og-home.jpg';
   <div class="container hero-container footer-container">
     <div class="row align-items-start footer-main-row">
       <div class="col-12 col-lg-8">
-        <a class="navbar-brand d-flex flex-column" href="/srb/">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand" href="/srb/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 <br><br>
         <p class="footer-mission mb-4">
@@ -316,7 +301,7 @@ $page_image = '/assets/images/og-home.jpg';
           <a href="/srb/" class="footer-nav-link">Početna</a>
           <a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
           <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
-          <a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+          <a href="/srb/nas-pravni-tim" class="footer-nav-link">Naš Tim</a>
           <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
           <a href="/srb/vesti" class="footer-nav-link">Vesti</a>
           <a href="/srb/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>

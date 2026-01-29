@@ -5,14 +5,9 @@ $current_lang = 'srb';
 $current_page = 'news-single';
 $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1800&auto=format&fit=crop';
 
+include '../includes/head.php';
+include '../includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="srb">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_desc ?>">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/custom.css" />
@@ -23,7 +18,7 @@ $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80
 <div class="site-wrapper">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
 <div class="container hero-container">
-<a class="navbar-brand d-flex flex-column pl-20" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand pl-20" href="/srb/"><img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40"></a>
 <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
 <span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
 </button>
@@ -34,8 +29,8 @@ $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80
 <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/nas-pravni-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
 </li>
 <li class="nav-item"><a class="nav-link active" href="/srb/vesti">Vesti</a></li>
 <li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>
@@ -157,14 +152,14 @@ $page_image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80
 <div class="container hero-container footer-container">
 <div class="row align-items-start footer-main-row">
 <div class="col-12 col-lg-8">
-<a class="navbar-brand d-flex flex-column" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand" href="/srb/"><img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40"></a>
 <br><br>
 <p class="footer-mission mb-4">Naša misija je da pružimo jasne, strateške pravne savete koji štite vaše interese, smanjuju složenost i omogućavaju vam da se fokusirate na ono što je najvažnije.</p>
 <nav class="footer-nav d-flex flex-wrap gap-4">
 <a href="/srb/" class="footer-nav-link">Početna</a>
 <a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
 <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
-<a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+<a href="/srb/nas-pravni-tim" class="footer-nav-link">Naš Tim</a>
 <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
 <a href="/srb/vesti" class="footer-nav-link">Vesti</a>
 <a href="/srb/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>

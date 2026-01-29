@@ -5,14 +5,9 @@ $current_lang = 'srb';
 $current_page = 'team';
 $page_image = '/assets/images/og-team.jpg';
 
+include '../includes/head.php';
+include '../includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="srb">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_desc ?>">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/custom.css" />
@@ -23,7 +18,7 @@ $page_image = '/assets/images/og-team.jpg';
 <div class="site-wrapper">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
 <div class="container hero-container">
-<a class="navbar-brand d-flex flex-column pl-20" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand pl-20" href="/srb/"><img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40"></a>
 <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
 <span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
 </button>
@@ -34,8 +29,8 @@ $page_image = '/assets/images/og-team.jpg';
 <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="/srb/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="/srb/nas-pravni-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="/srb/vesti">Vesti</a></li>
 <li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>
@@ -44,8 +39,8 @@ $page_image = '/assets/images/og-team.jpg';
 <div class="lang-switcher">
 <button class="lang-toggle"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" /><span class="lang-arrow"></span></button>
 <div class="lang-dropdown">
-<a href="/our-team" class="lang-option"><img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />English</a>
-<a href="/srb/nas-tim" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
+<a href="/our-legal-team" class="lang-option"><img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />English</a>
+<a href="/srb/nas-pravni-tim" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
 </div>
 </div>
 </div>
@@ -59,7 +54,7 @@ $page_image = '/assets/images/og-team.jpg';
           <div class="col-12 col-lg-8">
             <div class="about-label d-flex align-items-center mb-3">
               <span class="about-label-dot me-2"></span>
-              <span class="about-label-text">Naš Tim</span>
+              <span class="about-label-text">Naš pravni Tim</span>
             </div>
 
             <h1 class="contact-title mb-0">
@@ -91,7 +86,7 @@ $page_image = '/assets/images/og-team.jpg';
               "Njen rad je dobro obavljen, efikasan i precizan. Isporučuje ono što nam je potrebno kada nam je potrebno."
 - Chambers, Europe, Serbia, Competition/Antitrust, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/srb/advokat-bojana-miljanovic" class="btn-partner-outline">
               Više o Bojani
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>
@@ -112,7 +107,7 @@ $page_image = '/assets/images/og-team.jpg';
               "On je najbolji antimonopolski advokat u Istočnoj Evropi. Ima izvanredne pravne veštine i pažnju na detalje, uz poslovni pristup i način razmišljanja."
 - Chambers, Europe, Serbia, Competition/Antitrust, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/srb/advokat-bojan-vuckovic" class="btn-partner-outline">
               Više o Bojanu
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>

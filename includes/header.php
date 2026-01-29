@@ -16,8 +16,11 @@ $url_mapping = [
     'home' => ['en' => '/', 'srb' => '/srb/'],
     'contact' => ['en' => '/contact', 'srb' => '/srb/kontakt'],
     'about' => ['en' => '/about', 'srb' => '/srb/o-nama'],
-    'team' => ['en' => '/our-team', 'srb' => '/srb/nas-tim'],
+    'team' => ['en' => '/our-legal-team', 'srb' => '/srb/nas-pravni-tim'],
     'legal-fields' => ['en' => '/legal-fields', 'srb' => '/srb/pravne-oblasti'],
+    'competition-law' => ['en' => '/competition-law', 'srb' => '/srb/pravo-konkurencije'],
+    'telecommunications-law' => ['en' => '/telecommunications-law', 'srb' => '/srb/telekomunikaciono-pravo'],
+    'commercial-law' => ['en' => '/commercial-law', 'srb' => '/srb/privredno-pravo'],
     'jurisdictions' => ['en' => '/jurisdictions', 'srb' => '/srb/jurisdikcije'],
     'careers' => ['en' => '/careers', 'srb' => '/srb/karijere'],
     'news' => ['en' => '/news', 'srb' => '/srb/vesti'],
@@ -37,7 +40,7 @@ if ($current_lang === 'en') {
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
         <a class="navbar-brand pl-20" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
-          <img src="/assets/images/bnb-law-logotype.svg" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 
         <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
@@ -65,21 +68,21 @@ if ($current_lang === 'en') {
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
                 <li class="d-lg-none"><a class="dropdown-item" href="/legal-fields">All Legal Fields</a></li>
-                <li><a class="dropdown-item" href="#">Competition / Antitrust Law</a></li>
-                <li><a class="dropdown-item" href="#">Telecommunications Law</a></li>
-                <li><a class="dropdown-item" href="#">Commercial Law</a></li>
+                <li><a class="dropdown-item" href="/competition-law">Competition / Antitrust Law</a></li>
+                <li><a class="dropdown-item" href="/telecommunications-law">Telecommunications Law</a></li>
+                <li><a class="dropdown-item" href="/commercial-law">Commercial Law</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link<?= $current_page === 'jurisdictions' ? ' active' : '' ?>" href="/jurisdictions">Regions</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/our-team" id="teamDropdown"
+              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/our-legal-team" id="teamDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Our Team
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/our-team">Meet the Team</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/our-legal-team">Meet the Team</a></li>
                 <li><a class="dropdown-item" href="/careers">Careers</a></li>
               </ul>
             </li>
@@ -100,21 +103,21 @@ if ($current_lang === 'en') {
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
                 <li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
-                <li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li>
-                <li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li>
-                <li><a class="dropdown-item" href="#">Privredno Pravo</a></li>
+                <li><a class="dropdown-item" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li>
+                <li><a class="dropdown-item" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li>
+                <li><a class="dropdown-item" href="/srb/privredno-pravo">Privredno Pravo</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link<?= $current_page === 'jurisdictions' ? ' active' : '' ?>" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-tim" id="teamDropdown"
+              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim" id="teamDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
                 <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>

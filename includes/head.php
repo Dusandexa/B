@@ -37,12 +37,24 @@ $url_map = [
         'srb' => '/srb/o-nama'
     ],
     'team' => [
-        'en' => '/our-team',
-        'srb' => '/srb/nas-tim'
+        'en' => '/our-legal-team',
+        'srb' => '/srb/nas-pravni-tim'
     ],
     'legal-fields' => [
         'en' => '/legal-fields',
         'srb' => '/srb/pravne-oblasti'
+    ],
+    'competition-law' => [
+        'en' => '/competition-law',
+        'srb' => '/srb/pravo-konkurencije'
+    ],
+    'telecommunications-law' => [
+        'en' => '/telecommunications-law',
+        'srb' => '/srb/telekomunikaciono-pravo'
+    ],
+    'commercial-law' => [
+        'en' => '/commercial-law',
+        'srb' => '/srb/privredno-pravo'
     ],
     'jurisdictions' => [
         'en' => '/jurisdictions',

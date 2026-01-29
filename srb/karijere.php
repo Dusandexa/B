@@ -4,15 +4,10 @@ $page_desc = 'Pridružite se BnB LAW - tražimo talentovane pravne profesionalce
 $current_lang = 'srb';
 $current_page = 'careers';
 $page_image = '/assets/images/og-careers.jpg';
+
+include '../includes/head.php';
+include '../includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="srb">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_desc ?>">
-<link rel="canonical" href="https://yourwebsite.com/srb/karijere">
 <link rel="alternate" hreflang="en" href="https://yourwebsite.com/careers">
 <link rel="alternate" hreflang="srb" href="https://yourwebsite.com/srb/karijere">
 <link rel="alternate" hreflang="x-default" href="https://yourwebsite.com/careers">
@@ -29,11 +24,8 @@ $page_image = '/assets/images/og-careers.jpg';
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
-        <a class="navbar-brand d-flex flex-column pl-20" href="/srb/">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand pl-20" href="/srb/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 
         <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
@@ -67,11 +59,11 @@ $page_image = '/assets/images/og-careers.jpg';
               <a class="nav-link" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="/srb/nas-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle active" href="/srb/nas-pravni-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
                 <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>
@@ -132,10 +124,10 @@ $page_image = '/assets/images/og-careers.jpg';
           <div class="col-12 col-lg-5">
             <div class="contact-left">
               <p class="contact-lead mb-4">
-                Uvek tražimo talentovane pravne profesionalce koji deleše našu posvećenost izvrsnosti, preciznosti i usluzi klijentima.
+                Uvek smo u potrazi za talentovanim pravnim profesionalcima koji dele našu posvećenost visokom kvalitetu rada, preciznosti i odgovornom odnosu prema klijentima.
               </p>
               <p class="contact-lead mb-4">
-                Ako ste strastveni prema pravu konkurencije, telekomunikacija ili privrednoj praksi, voleli bismo da čujemo od vas.
+                Ukoliko vas posebno interesuju pravo konkurencije, telekomunikacije ili privredno pravo, biće nam zadovoljstvo da vas upoznamo.
               </p>
             </div>
           </div>
@@ -215,11 +207,8 @@ $page_image = '/assets/images/og-careers.jpg';
   <div class="container hero-container footer-container">
     <div class="row align-items-start footer-main-row">
       <div class="col-12 col-lg-8">
-        <a class="navbar-brand d-flex flex-column" href="/srb/">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand" href="/srb/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 <br><br>
         <p class="footer-mission mb-4">
@@ -231,7 +220,7 @@ $page_image = '/assets/images/og-careers.jpg';
           <a href="/srb/" class="footer-nav-link">Početna</a>
           <a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
           <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
-          <a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+          <a href="/srb/nas-pravni-tim" class="footer-nav-link">Naš Tim</a>
           <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
           <a href="/srb/vesti" class="footer-nav-link">Vesti</a>
           <a href="/srb/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>

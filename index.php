@@ -26,11 +26,8 @@ include 'includes/head.php';
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
-        <a class="navbar-brand d-flex flex-column pl-20" href="/">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand pl-20" href="/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 
         <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
@@ -55,20 +52,20 @@ include 'includes/head.php';
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
                 <li class="d-lg-none"><a class="dropdown-item" href="/legal-fields">All Legal Fields</a></li>
-                <li><a class="dropdown-item" href="#">Competition / Antitrust Law</a></li>
-                <li><a class="dropdown-item" href="#">Telecommunications Law</a></li>
-                <li><a class="dropdown-item" href="#">Commercial Law</a></li>
+                <li><a class="dropdown-item" href="/competition-law">Competition / Antitrust Law</a></li>
+                <li><a class="dropdown-item" href="/telecommunications-law">Telecommunications Law</a></li>
+                <li><a class="dropdown-item" href="/commercial-law">Commercial Law</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/jurisdictions">Regions</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/our-team" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/our-legal-team" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Our Team
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/our-team">Meet the Team</a></li>
+                <li class="d-lg-none"><a class="dropdown-item" href="/our-legal-team">Meet the Team</a></li>
                 <li><a class="dropdown-item" href="/careers">Careers</a></li>
               </ul>
             </li>
@@ -254,7 +251,7 @@ include 'includes/head.php';
               "Her work is well done, efficient and precise. She delivers what we need when we need it."
 - Chambers, Europe, Serbia, Competition/Antitrust, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/lawyer-bojana-miljanovic" class="btn-partner-outline">
               More about Bojana
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>
@@ -274,7 +271,7 @@ include 'includes/head.php';
               "He is the best antitrust lawyer in Eastern Europe. He has outstanding legal skills and attention to detail, while keeping a business approach and mindset."
 - Chambers, Europe, Serbia, Competition/Antitrust, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/lawyer-bojan-vuckovic" class="btn-partner-outline">
               More about Bojan
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>
@@ -290,11 +287,8 @@ include 'includes/head.php';
   <div class="container hero-container footer-container">
     <div class="row align-items-start footer-main-row">
       <div class="col-12 col-lg-8">
-        <a class="navbar-brand d-flex flex-column" href="/">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 <br><br>
         <p class="footer-mission mb-4">
@@ -306,7 +300,7 @@ include 'includes/head.php';
           <a href="/" class="footer-nav-link">Home</a>
           <a href="/legal-fields" class="footer-nav-link">Legal Fields</a>
           <a href="/jurisdictions" class="footer-nav-link">Regions</a>
-          <a href="/our-team" class="footer-nav-link">Our Team</a>
+          <a href="/our-legal-team" class="footer-nav-link">Our Team</a>
           <a href="/careers" class="footer-nav-link">Careers</a>
           <a href="/news" class="footer-nav-link">News</a>
           <a href="/contact" class="footer-nav-link">Contact Us</a>

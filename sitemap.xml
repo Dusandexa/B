@@ -61,18 +61,18 @@
     
     <!-- Our Team Page -->
     <url>
-        <loc>https://yourwebsite.com/our-team</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/our-team"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/nas-tim"/>
+        <loc>https://yourwebsite.com/our-legal-team</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/our-legal-team"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/nas-pravni-tim"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://yourwebsite.com/srb/nas-tim</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/our-team"/>
-        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/nas-tim"/>
+        <loc>https://yourwebsite.com/srb/nas-pravni-tim</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/our-legal-team"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="https://yourwebsite.com/srb/nas-pravni-tim"/>
         <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

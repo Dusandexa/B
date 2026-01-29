@@ -81,8 +81,8 @@ $GLOBALS['url_mapping'] = [
         'srb' => '/srb/o-nama'
     ],
     'team' => [
-        'en' => '/our-team',
-        'srb' => '/srb/nas-tim'
+        'en' => '/our-legal-team',
+        'srb' => '/srb/nas-pravni-tim'
     ],
     'legal-fields' => [
         'en' => '/legal-fields',
@@ -114,7 +114,7 @@ $GLOBALS['nav_items'] = [
     'en' => [
         ['url' => '/', 'text' => 'Home', 'page' => 'home'],
         ['url' => '/about', 'text' => 'About Us', 'page' => 'about'],
-        ['url' => '/our-team', 'text' => 'Our Team', 'page' => 'team'],
+        ['url' => '/our-legal-team', 'text' => 'Our Team', 'page' => 'team'],
         ['url' => '/legal-fields', 'text' => 'Legal Fields', 'page' => 'legal-fields'],
         ['url' => '/jurisdictions', 'text' => 'Jurisdictions', 'page' => 'jurisdictions'],
         ['url' => '/careers', 'text' => 'Careers', 'page' => 'careers'],
@@ -124,7 +124,7 @@ $GLOBALS['nav_items'] = [
     'srb' => [
         ['url' => '/srb/', 'text' => 'Početna', 'page' => 'home'],
         ['url' => '/srb/o-nama', 'text' => 'O Nama', 'page' => 'about'],
-        ['url' => '/srb/nas-tim', 'text' => 'Naš Tim', 'page' => 'team'],
+        ['url' => '/srb/nas-pravni-tim', 'text' => 'Naš Tim', 'page' => 'team'],
         ['url' => '/srb/pravne-oblasti', 'text' => 'Pravne Oblasti', 'page' => 'legal-fields'],
         ['url' => '/srb/jurisdikcije', 'text' => 'Jurisdikcije', 'page' => 'jurisdictions'],
         ['url' => '/srb/karijere', 'text' => 'Karijere', 'page' => 'careers'],

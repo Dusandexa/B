@@ -17,11 +17,8 @@ $current_year = date('Y');
     <div class="row align-items-start footer-main-row">
       <!-- LEFT: logo, mission, nav -->
       <div class="col-12 col-lg-8">
-        <a class="navbar-brand d-flex flex-column" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 <br><br>
         <p class="footer-mission mb-4">
@@ -36,7 +33,7 @@ $current_year = date('Y');
             <a href="/" class="footer-nav-link">Home</a>
             <a href="/legal-fields" class="footer-nav-link">Legal Fields</a>
             <a href="/jurisdictions" class="footer-nav-link">Regions</a>
-            <a href="/our-team" class="footer-nav-link">Our Team</a>
+            <a href="/our-legal-team" class="footer-nav-link">Our Team</a>
             <a href="/careers" class="footer-nav-link">Careers</a>
             <a href="/news" class="footer-nav-link">News</a>
             <a href="/contact" class="footer-nav-link">Contact Us</a>
@@ -44,7 +41,7 @@ $current_year = date('Y');
             <a href="/srb/" class="footer-nav-link">Početna</a>
             <a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
             <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
-            <a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+            <a href="/srb/nas-pravni-tim" class="footer-nav-link">Naš Tim</a>
             <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
             <a href="/srb/vesti" class="footer-nav-link">Vesti</a>
             <a href="/srb/kontakt" class="footer-nav-link">Kontakt</a>

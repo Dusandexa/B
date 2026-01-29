@@ -48,7 +48,7 @@ include 'includes/header.php';
               "Her work is well done, efficient and precise. She delivers what we need when we need it."
 - Chambers, Europe, Serbia, Competition/Antitrust, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/lawyer-bojana-miljanovic" class="btn-partner-outline">
               More about Bojana
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>
@@ -69,7 +69,7 @@ include 'includes/header.php';
               "He is the best antitrust lawyer in Eastern Europe. He has outstanding legal skills and attention to detail, while keeping a business approach and mindset."
 - Chambers, Europe, Serbia, Competition/Antitrust, 2025
             </p>
-            <a href="#" class="btn-partner-outline">
+            <a href="/lawyer-bojan-vuckovic" class="btn-partner-outline">
               More about Bojan
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
             </a>

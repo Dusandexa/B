@@ -5,52 +5,9 @@ $current_lang = 'srb';
 $current_page = 'legal-fields';
 $page_image = '/assets/images/og-legal-fields.jpg';
 
+include 'includes/head.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="srb">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_desc ?>">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/custom.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-</head>
-
-<body>
-<div class="site-wrapper">
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
-<div class="container hero-container">
-<a class="navbar-brand d-flex flex-column pl-20" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
-<button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-<span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
-</button>
-<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-<ul class="navbar-nav align-items-lg-center me-lg-3">
-<li class="nav-item"><a class="nav-link" href="/srb/">Početna</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="/srb/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
-</li>
-<li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/nas-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
-</li>
-<li class="nav-item"><a class="nav-link" href="/srb/vesti">Vesti</a></li>
-<li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>
-</ul>
-<button class="btn btn-white-cut mt-3 mt-lg-0">Pozovite +3811182145</button>
-<div class="lang-switcher">
-<button class="lang-toggle"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" /><span class="lang-arrow"></span></button>
-<div class="lang-dropdown">
-<a href="/legal-fields" class="lang-option"><img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" />English</a>
-<a href="/srb/pravne-oblasti" class="lang-option active"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" />Srpski</a>
-</div>
-</div>
-</div>
-</div>
-</nav>
 
 <!-- LEGAL FIELDS – FULL WIDTH -->
 <section class="legal-fields-section">
@@ -74,7 +31,7 @@ $page_image = '/assets/images/og-legal-fields.jpg';
         </div>
 
         <div class="legal-field-bottom">
-          <a href="#" class="btn-white-cut">
+          <a href="/srb/pravo-konkurencije" class="btn-white-cut">
             Saznajte više
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
           </a>
@@ -99,7 +56,7 @@ $page_image = '/assets/images/og-legal-fields.jpg';
         </div>
 
         <div class="legal-field-bottom">
-          <a href="#" class="btn-white-cut">
+          <a href="/srb/telekomunikaciono-pravo" class="btn-white-cut">
             Saznajte više
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
           </a>
@@ -124,7 +81,7 @@ $page_image = '/assets/images/og-legal-fields.jpg';
         </div>
 
         <div class="legal-field-bottom">
-          <a href="#" class="btn-white-cut">
+          <a href="/srb/privredno-pravo" class="btn-white-cut">
             Saznajte više
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
           </a>
@@ -148,27 +105,26 @@ $page_image = '/assets/images/og-legal-fields.jpg';
     <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center align-items-center gap-5 py-4">
 
       <!-- 6 logos total -->
-      <img src="../assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
-      <img src="../assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
-      <img src="../assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
-      <img src="../assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
+      <img src="/assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+      <img src="/assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+      <img src="/assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+      <img src="/assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
 
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
-<div class="container hero-container footer-container">
-<div class="row align-items-start footer-main-row">
+<?php include 'includes/footer.php'; ?>
+
 <div class="col-12 col-lg-8">
-<a class="navbar-brand d-flex flex-column" href="/srb/"><span>BnB LAW</span><small class="navbar-brand-subtext">Bojan Vučković & Bojana Miljanović</small></a>
+<a class="navbar-brand" href="/srb/"><img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40"></a>
 <br><br>
 <p class="footer-mission mb-4">Naša misija je da pružimo jasne, strateške pravne savete koji štite vaše interese, smanjuju složenost i omogućavaju vam da se fokusirate na ono što je najvažnije.</p>
 <nav class="footer-nav d-flex flex-wrap gap-4">
 <a href="/srb/" class="footer-nav-link">Početna</a>
 <a href="/srb/pravne-oblasti" class="footer-nav-link">Pravne Oblasti</a>
 <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
-<a href="/srb/nas-tim" class="footer-nav-link">Naš Tim</a>
+<a href="/srb/nas-pravni-tim" class="footer-nav-link">Naš Tim</a>
 <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
 <a href="/srb/vesti" class="footer-nav-link">Vesti</a>
 <a href="/srb/kontakt" class="footer-nav-link">Kontaktirajte Nas</a>
