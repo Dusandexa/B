@@ -161,8 +161,7 @@ include 'includes/head.php';
 
 <div class="col-12 col-md-9">
   <p class="about-intro">
-    We deliver precise, strategic counsel designed to protect your interests and strengthen your position. Combining
-    <span class="underline-accent">deep expertise with meticulous attention to detail</span>, we provide tailored solutions
+     Combining <span class="underline-accent">deep expertise with meticulous attention to detail</span>, we provide tailored solutions
     and clear guidance through complex matters - always with discretion, excellence, and a commitment to lasting results.
   </p>
 

@@ -19,9 +19,16 @@ include 'includes/header.php';
               <span class="about-label-text">Our Regional Presence</span>
             </div>
 
-            <h1 class="contact-title mb-0">
+            <h1 class="contact-title mb-3">
               Strategic counsel across key markets in Southeast Europe and beyond.
             </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <p class="mb-4">
+             With deep regional insight and cross-border experience,we advise domestic and international clients operating in complex and evolving legal environments.
+            </p>
           </div>
         </div>
       </div>

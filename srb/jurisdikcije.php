@@ -62,9 +62,16 @@ $page_image = '/assets/images/og-jurisdictions.jpg';
               <span class="about-label-text">Naša Regionalna Prisutnost</span>
             </div>
 
-            <h1 class="contact-title mb-0">
+            <h1 class="contact-title mb-3">
               Strateško savetovanje širom ključnih tržišta u Jugoistočnoj Evropi i šire.
             </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <p class="contact-lead mb-4">
+              Naša regionalna ekspertiza obuhvata više jurisdikcija širom Jugoistočne Evrope, omogućavajući nam da pružimo sveobuhvatna pravna rešenja prilagođena jedinstvenim regulatornim okvirima svakog tržišta. Održavamo jake lokalne partnere i duboko razumevanje regionalnih poslovnih praksi.
+            </p>
           </div>
         </div>
       </div>

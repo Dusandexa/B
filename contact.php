@@ -26,7 +26,7 @@ include 'includes/header.php';
           </h1>
 
           <p class="contact-lead mb-4">
-            Share a short overview and we'll respond promptly. For urgent matters, call our office directly.
+            Share a brief overview of your matter and our team will respond promptly and discreetly. For time-sensitive or urgent matters, please contact our office directly.
           </p>
 
           <div class="d-flex flex-wrap gap-3">
