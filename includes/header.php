@@ -36,11 +36,8 @@ if ($current_lang === 'en') {
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
-        <a class="navbar-brand d-flex flex-column pl-20" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
-          <span>BnB LAW</span>
-          <small class="navbar-brand-subtext">
-            Bojan Vučković & Bojana Miljanović
-          </small>
+        <a class="navbar-brand pl-20" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
+          <img src="/assets/images/bnb-law-logotype.svg" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 
         <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
