@@ -71,10 +71,10 @@ include 'includes/header.php';
             </div>
 
             <div class="clients-logos-wrapper d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 py-3">
-              <img src="assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
-              <img src="assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
-              <img src="assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
-              <img src="assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
+              <img src="/assets/images/resend-wordmark-black.svg" alt="Resend" class="client-logo-img">
+              <img src="/assets/images/logo_wordmark_1500.webp" alt="Wordmark" class="client-logo-img">
+              <img src="/assets/images/Google_2015_logo.svg" alt="Google" class="client-logo-img">
+              <img src="/assets/images/coderabbit-logo-light.svg" alt="CodeRabbit" class="client-logo-img">
             </div>
           </div>
         </div>

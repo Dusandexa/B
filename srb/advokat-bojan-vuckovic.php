@@ -7,6 +7,64 @@ $page_image = '/assets/images/Bojan_Vuckovic.jpg';
 
 include '../includes/head.php';
 ?>
+<link rel="alternate" hreflang="en" href="https://yourwebsite.com/lawyer-bojan-vuckovic">
+<link rel="alternate" hreflang="srb" href="https://yourwebsite.com/srb/advokat-bojan-vuckovic">
+<link rel="alternate" hreflang="x-default" href="https://yourwebsite.com/lawyer-bojan-vuckovic">
+
+<!-- Bootstrap 5.3 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Custom styles -->
+<link rel="stylesheet" href="/assets/css/custom.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+      <div class="container hero-container">
+        <a class="navbar-brand pl-20" href="/srb/">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
+        </a>
+
+        <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+        aria-label="Toggle navigation">
+    <span class="hamburger-lines">
+      <span class="line l1"></span>
+      <span class="line l2"></span>
+      <span class="line l3"></span>
+      <span class="line l4"></span>
+    </span>
+</button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav align-items-lg-center me-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="/srb/">Početna</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle<?= in_array($current_page, ['legal-fields', 'competition-law', 'telecommunications-law', 'commercial-law']) ? ' active' : '' ?>" href="/srb/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
+              <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item<?= $current_page === 'competition-law' ? ' active' : '' ?>" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li><li><a class="dropdown-item<?= $current_page === 'telecommunications-law' ? ' active' : '' ?>" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item<?= $current_page === 'commercial-law' ? ' active' : '' ?>" href="/srb/privredno-pravo">Privredno Pravo</a></li></ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle<?= in_array($current_page, ['team', 'careers']) ? ' active' : '' ?>" href="/srb/nas-pravni-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item<?= $current_page === 'careers' ? ' active' : '' ?>" href="/srb/karijere">Karijere</a></li></ul>
+</li>
+            <li class="nav-item"><a class="nav-link" href="/srb/vesti">Vesti</a></li>
+            <li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>
+          </ul>
+          <button class="btn btn-white-cut mt-3 mt-lg-0">Pozovite +3811182145</button>
+          <div class="lang-switcher">
+            <button class="lang-toggle"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" /><span class="lang-arrow"></span></button>
+            <div class="lang-dropdown">
+              <a href="/lawyer-bojan-vuckovic" class="lang-option"><img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-flag" /><span>English</span></a>
+              <a href="/srb/advokat-bojan-vuckovic" class="lang-option"><img src="https://flagcdn.com/w40/rs.png" alt="Serbian" class="lang-flag" /><span>Srpski</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
 <!-- HERO SECTION -->
 <section class="team-profile-hero" style="background-color: var(--back-middle);">
@@ -113,4 +171,55 @@ include '../includes/head.php';
   </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<!-- FOOTER -->
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <a href="/srb/" class="footer-logo d-inline-block mb-3">
+          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
+        </a>
+        <p class="footer-desc">Regionalna ekspertiza u pravu konkurencije, telekomunikacijama i privrednim pitanjima.</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5 class="footer-heading">Praksa</h5>
+        <nav class="footer-nav">
+          <a href="/srb/pravo-konkurencije" class="footer-nav-link">Pravo Konkurencije</a>
+          <a href="/srb/telekomunikaciono-pravo" class="footer-nav-link">Telekomunikacije</a>
+          <a href="/srb/privredno-pravo" class="footer-nav-link">Privredno Pravo</a>
+        </nav>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5 class="footer-heading">Firma</h5>
+        <nav class="footer-nav">
+          <a href="/srb/nas-pravni-tim" class="footer-nav-link">Naš Tim</a>
+          <a href="/srb/jurisdikcije" class="footer-nav-link">Regioni</a>
+          <a href="/srb/karijere" class="footer-nav-link">Karijere</a>
+        </nav>
+      </div>
+      <div class="col-12 col-md-4">
+        <h5 class="footer-heading">Kontakt</h5>
+        <div class="footer-contact">
+          <p class="mb-2"><strong>Beograd, Srbija</strong></p>
+          <p class="mb-1">Tel: +381 11 82 145</p>
+          <p class="mb-3">Email: office@bnblaw.com</p>
+          <a href="/srb/kontakt" class="btn btn-white-cut">Pozovite</a>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider my-4" />
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="footer-copyright mb-0">&copy; 2025 BnB LAW. Sva prava zadržana.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="/assets/js/custom.js"></script>
+</body>
+</html>
