@@ -125,7 +125,7 @@ $sr_url = $base_url . ($url_map[$current_page]['srb'] ?? '/srb/');
     <meta name="twitter:image" content="<?= htmlspecialchars($page_image_full) ?>">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico?v=2">
     
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -134,5 +134,5 @@ $sr_url = $base_url . ($url_map[$current_page]['srb'] ?? '/srb/');
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/custom.css?v=2">
 </head>
