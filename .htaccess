@@ -47,8 +47,7 @@ RewriteRule ^forms/ - [F,L]
 
 # Security: Prevent access to .htaccess and other hidden files
 <FilesMatch "^\.">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 # UTF-8 encoding for all text files
