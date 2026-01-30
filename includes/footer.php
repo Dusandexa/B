@@ -18,7 +18,7 @@ $current_year = date('Y');
       <!-- LEFT: logo, mission, nav -->
       <div class="col-12 col-lg-8">
         <a class="navbar-brand" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
-          <img src="/assets/images/bnb-law-logotype2.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
+          <img src="/assets/images/logo-updatedcolor.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 <br><br>
         <p class="footer-mission mb-4">
