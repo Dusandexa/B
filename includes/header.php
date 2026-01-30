@@ -40,7 +40,7 @@ if ($current_lang === 'en') {
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
       <div class="container hero-container">
         <a class="navbar-brand pl-20" href="<?= $current_lang === 'srb' ? '/srb/' : '/' ?>">
-          <img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
+          <img src="/assets/images/bnb-law-logotype2.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40">
         </a>
 
         <button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse"
