@@ -6,7 +6,6 @@ $current_page = 'careers';
 $page_image = '/assets/images/og-careers.jpg';
 
 include '../includes/head.php';
-include '../includes/header.php';
 ?>
 <link rel="alternate" hreflang="en" href="https://yourwebsite.com/careers">
 <link rel="alternate" hreflang="srb" href="https://yourwebsite.com/srb/karijere">
@@ -50,21 +49,21 @@ include '../includes/header.php';
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
                 <li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
-                <li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li>
-                <li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li>
-                <li><a class="dropdown-item" href="#">Privredno Pravo</a></li>
+                <li><a class="dropdown-item" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li>
+                <li><a class="dropdown-item" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li>
+                <li><a class="dropdown-item" href="/srb/privredno-pravo">Privredno Pravo</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="/srb/nas-pravni-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle<?= in_array($current_page, ['team', 'careers']) ? ' active' : '' ?>" href="/srb/nas-pravni-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
-                <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
+                <li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'careers' ? ' active' : '' ?>" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>
             <li class="nav-item">

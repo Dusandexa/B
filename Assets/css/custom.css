@@ -263,6 +263,44 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
 }
 
 /* ================
+   PURPLE CUT BUTTON (Inverted from white-cut)
+   ================ */
+.btn-purple-cut {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  background: var(--accent-light);
+  color: #ffffff;
+  padding: 0.65rem 1.4rem;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  border-radius: 0;
+
+  /* cut corner top-left */
+  clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
+
+  transition: all 0.25s ease;
+}
+
+.btn-purple-cut:hover {
+  background: #ffffff;
+  color: #133034;
+}
+
+.btn-purple-cut svg {
+  fill: #6062b4;
+}
+
+.btn-purple-cut:hover svg {
+  fill: #e3e3e3;
+}
+
+/* ================
    LANGUAGE SWITCHER
    ================ */
 .lang-switcher {
@@ -1460,6 +1498,15 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
     margin-right: 0 !important;
   }
 
+  .dropdown-item.active {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--accent-light) !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 4px !important;
+  }
+
   /* Full-width hover background for dropdown items */
   .dropdown-menu.ptb-0 {
     padding: 0 !important;
@@ -1528,6 +1575,15 @@ clip-path: polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 18px);
   #mainNavbar .dropdown-item:focus {
     background: rgba(255, 255, 255, 0.1) !important;
     color: #ffffff !important;
+  }
+
+  #mainNavbar .dropdown-item.active {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--accent-light) !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 4px !important;
   }
 }
 /* Big 3-column stats under intro */

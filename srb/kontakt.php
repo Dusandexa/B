@@ -6,19 +6,30 @@ $current_page = 'contact';
 $page_image = '/assets/images/og-contact.jpg';
 
 include '../includes/head.php';
-include '../includes/header.php';
 ?>
-          <span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+<div class="site-wrapper">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+<div class="container hero-container">
+<a class="navbar-brand pl-20" href="/srb/"><img src="/assets/images/bnb-law-logotype.png" alt="BnB LAW - Bojan Vučković & Bojana Miljanović" height="40"></a>
+<button class="navbar-toggler custom-hamburger pr-20" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+<span class="hamburger-lines"><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span><span class="line l4"></span></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
           <ul class="navbar-nav align-items-lg-center me-lg-3">
             <li class="nav-item"><a class="nav-link" href="/srb/">Početna</a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/pravne-oblasti" id="moreLinksDropdown" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
-              <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
+              <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="/srb/privredno-pravo">Privredno Pravo</a></li></ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/nas-pravni-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-              <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle<?= in_array($current_page, ['team', 'careers']) ? ' active' : '' ?>" href="/srb/nas-pravni-tim" id="teamDropdown" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+              <ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item<?= $current_page === 'careers' ? ' active' : '' ?>" href="/srb/karijere">Karijere</a></li></ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="/srb/vesti">Vesti</a></li>
             <li class="nav-item"><a class="nav-link active" href="/srb/kontakt">Kontaktirajte nas</a></li>

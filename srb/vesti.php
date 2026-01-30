@@ -6,7 +6,6 @@ $current_page = 'news';
 $page_image = '/assets/images/og-news.jpg';
 
 include '../includes/head.php';
-include '../includes/header.php';
 ?>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -26,11 +25,11 @@ include '../includes/header.php';
 <ul class="navbar-nav align-items-lg-center me-lg-3">
 <li class="nav-item"><a class="nav-link" href="/srb/">Početna</a></li>
 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/pravne-oblasti" role="button" data-bs-toggle="dropdown">Pravne Oblasti</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="#">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="#">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="#">Privredno Pravo</a></li></ul>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li><li><a class="dropdown-item" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li><li><a class="dropdown-item" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li><li><a class="dropdown-item" href="/srb/privredno-pravo">Privredno Pravo</a></li></ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="/srb/jurisdikcije">Regioni</a></li>
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/srb/nas-pravni-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
-<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li></ul>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle<?= in_array($current_page, ['team', 'careers']) ? ' active' : '' ?>" href="/srb/nas-pravni-tim" role="button" data-bs-toggle="dropdown">Naš Tim</a>
+<ul class="dropdown-menu dropdown-menu-dark ptb-0"><li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li><li><a class="dropdown-item<?= $current_page === 'careers' ? ' active' : '' ?>" href="/srb/karijere">Karijere</a></li></ul>
 </li>
 <li class="nav-item"><a class="nav-link active" href="/srb/vesti">Vesti</a></li>
 <li class="nav-item"><a class="nav-link" href="/srb/kontakt">Kontaktirajte nas</a></li>

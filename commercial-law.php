@@ -26,7 +26,7 @@ include 'includes/header.php';
           Our commercial law practice helps businesses structure and execute transactions, negotiate contracts, and manage commercial relationships effectively across Southeast European markets.
         </p>
 
-        <a href="/contact" class="btn btn-white-cut">
+        <a href="/contact" class="btn btn-purple-cut">
           Schedule a Consultation
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
         </a>

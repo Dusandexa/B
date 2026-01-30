@@ -26,7 +26,7 @@ include 'includes/header.php';
           Naša praksa prava konkurencije fokusirana je na pomoć preduzećima da se snađu u složenim postupcima kontrole koncentracija, odbrane od antimonopolskih istraga i obezbeđenja usklađenosti sa propisima konkurencije širom Jugoistočne Evrope.
         </p>
 
-        <a href="/srb/kontakt" class="btn btn-white-cut">
+        <a href="/srb/kontakt" class="btn btn-purple-cut">
           Zakažite Konsultaciju
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
         </a>

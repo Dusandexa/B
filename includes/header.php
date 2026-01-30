@@ -62,28 +62,28 @@ if ($current_lang === 'en') {
               <a class="nav-link<?= $current_page === 'home' ? ' active' : '' ?>" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/legal-fields" id="moreLinksDropdown"
+              <a class="nav-link dropdown-toggle<?= in_array($current_page, ['legal-fields', 'competition-law', 'telecommunications-law', 'commercial-law']) ? ' active' : '' ?>" href="/legal-fields" id="moreLinksDropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Legal Fields
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
-                <li class="d-lg-none"><a class="dropdown-item" href="/legal-fields">All Legal Fields</a></li>
-                <li><a class="dropdown-item" href="/competition-law">Competition / Antitrust Law</a></li>
-                <li><a class="dropdown-item" href="/telecommunications-law">Telecommunications Law</a></li>
-                <li><a class="dropdown-item" href="/commercial-law">Commercial Law</a></li>
+                <li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/legal-fields">All Legal Fields</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'competition-law' ? ' active' : '' ?>" href="/competition-law">Competition / Antitrust Law</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'telecommunications-law' ? ' active' : '' ?>" href="/telecommunications-law">Telecommunications Law</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'commercial-law' ? ' active' : '' ?>" href="/commercial-law">Commercial Law</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link<?= $current_page === 'jurisdictions' ? ' active' : '' ?>" href="/jurisdictions">Regions</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/our-legal-team" id="teamDropdown"
+              <a class="nav-link dropdown-toggle<?= in_array($current_page, ['team', 'careers']) ? ' active' : '' ?>" href="/our-legal-team" id="teamDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Our Team
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/our-legal-team">Meet the Team</a></li>
-                <li><a class="dropdown-item" href="/careers">Careers</a></li>
+                <li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'team' ? ' active' : '' ?>" href="/our-legal-team">Meet the Team</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'careers' ? ' active' : '' ?>" href="/careers">Careers</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -97,35 +97,35 @@ if ($current_lang === 'en') {
               <a class="nav-link<?= $current_page === 'home' ? ' active' : '' ?>" href="/srb/">Početna</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/srb/pravne-oblasti" id="moreLinksDropdown"
+              <a class="nav-link dropdown-toggle<?= in_array($current_page, ['legal-fields', 'competition-law', 'telecommunications-law', 'commercial-law']) ? ' active' : '' ?>" href="/srb/pravne-oblasti" id="moreLinksDropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pravne Oblasti
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0" aria-labelledby="moreLinksDropdown">
-                <li class="d-lg-none"><a class="dropdown-item" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
-                <li><a class="dropdown-item" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li>
-                <li><a class="dropdown-item" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li>
-                <li><a class="dropdown-item" href="/srb/privredno-pravo">Privredno Pravo</a></li>
+                <li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'legal-fields' ? ' active' : '' ?>" href="/srb/pravne-oblasti">Sve Pravne Oblasti</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'competition-law' ? ' active' : '' ?>" href="/srb/pravo-konkurencije">Pravo Konkurencije</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'telecommunications-law' ? ' active' : '' ?>" href="/srb/telekomunikaciono-pravo">Telekomunikaciono Pravo</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'commercial-law' ? ' active' : '' ?>" href="/srb/privredno-pravo">Privredno Pravo</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link<?= $current_page === 'jurisdictions' ? ' active' : '' ?>" href="/srb/jurisdikcije">Regioni</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim" id="teamDropdown"
+              <a class="nav-link dropdown-toggle<?= in_array($current_page, ['team', 'careers']) ? ' active' : '' ?>" href="/srb/nas-pravni-tim" id="teamDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Naš Tim
               </a>
               <ul class="dropdown-menu dropdown-menu-dark ptb-0">
-                <li class="d-lg-none"><a class="dropdown-item" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
-                <li><a class="dropdown-item" href="/srb/karijere">Karijere</a></li>
+                <li class="d-lg-none"><a class="dropdown-item<?= $current_page === 'team' ? ' active' : '' ?>" href="/srb/nas-pravni-tim">Upoznajte Tim</a></li>
+                <li><a class="dropdown-item<?= $current_page === 'careers' ? ' active' : '' ?>" href="/srb/karijere">Karijere</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link<?= $current_page === 'news' ? ' active' : '' ?>" href="/srb/vesti">Vesti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link<?= $current_page === 'contact' ? ' active' : '' ?>" href="/srb/kontakt">Kontaktirajte nas danas</a>
+              <a class="nav-link<?= $current_page === 'contact' ? ' active' : '' ?>" href="/srb/kontakt">Kontaktirajte nas</a>
             </li>
             <?php endif; ?>
           </ul>

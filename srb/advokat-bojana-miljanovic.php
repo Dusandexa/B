@@ -6,7 +6,6 @@ $current_page = 'team';
 $page_image = '/assets/images/bojana-miljanovic.png';
 
 include '../includes/head.php';
-include '../includes/header.php';
 ?>
 
 <!-- HERO SECTION -->
