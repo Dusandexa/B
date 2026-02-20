@@ -101,7 +101,7 @@ include '../includes/head.php';
             </div>
           </div>
 
-          <!-- Right column: Trusted by -->
+          <!-- Right column: Trusted by
           <div class="col-12 col-lg-6">
             <div class="text-center text-lg-start">
               <p class="clients-title mb-4" style="color: #133034;">Poverenje nam je ukazalo preko 500 klijenata</p>
@@ -115,7 +115,7 @@ include '../includes/head.php';
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
 <footer class="site-footer">

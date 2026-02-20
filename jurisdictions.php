@@ -64,7 +64,7 @@ include 'includes/header.php';
             </div>
           </div>
 
-          <!-- Right column: Trusted by -->
+          <!-- Right column: Trusted by 
           <div class="col-12 col-lg-6">
             <div class="text-center text-lg-start">
               <p class="clients-title mb-4" style="color: #133034;">Trusted by 500+ clients</p>
@@ -78,7 +78,7 @@ include 'includes/header.php';
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
     </section>
 
 <?php include 'includes/footer.php'; ?>

@@ -163,20 +163,8 @@ include '../includes/head.php';
     i jasno vođenje kroz složena pitanja - uvek sa diskrecijom, izuzetnošću i posvećenošću trajnim rezultatima.
   </p>
 
-<div class="row g-4 mt-4 about-highlight-stats">
-  <div class="col-3 col-md-3">
-    <div class="about-highlight-stat">
-      <div class="about-highlight-value">800+</div>
-      <div class="about-highlight-label">uspešno rešenih predmeta</div>
-    </div>
-  </div>
-
-  <div class="col-3 col-md-3">
-    <div class="about-highlight-stat">
-      <div class="about-highlight-value">98%</div>
-      <div class="about-highlight-label">Uspešnih rešenja</div>
-    </div>
-  </div>
+<div class="mt-4">
+  <img src="../assets/images/thought-leaders-lexology-index.png" alt="Thought Leaders Lexology Index" class="img-fluid" style="max-width: 200px;">
 </div>
 </div>
 

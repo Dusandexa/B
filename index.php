@@ -162,20 +162,8 @@ include 'includes/head.php';
     and clear guidance through complex matters - always with discretion, excellence, and a commitment to lasting results.
   </p>
 
-<div class="row g-4 mt-4 about-highlight-stats">
-  <div class="col-3 col-md-3">
-    <div class="about-highlight-stat">
-      <div class="about-highlight-value">800+</div>
-      <div class="about-highlight-label">cases successfully handled</div>
-    </div>
-  </div>
-
-  <div class="col-3 col-md-3">
-    <div class="about-highlight-stat">
-      <div class="about-highlight-value">98%</div>
-      <div class="about-highlight-label">Successful resolutions</div>
-    </div>
-  </div>
+<div class="mt-4">
+  <img src="assets/images/thought-leaders-lexology-index.png" alt="Thought Leaders Lexology Index" class="img-fluid" style="max-width: 200px;">
 </div>
 </div>
 
